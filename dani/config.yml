@@ -1,4 +1,4 @@
-baseURL: http://example.org/
+baseURL: https://danipoloni.github.io
 languageCode: 'en-us'
 title: 'Dani Poloni'
 module:
@@ -9,3 +9,45 @@ markup:
   goldmark:
     renderer:
       hardWraps: true
+
+params:
+    env: production # to enable google analytics, opengraph, twitter-cards and schema.
+    description: "Dani Poloni - Worldbuilding and stuff"
+    author: Dani Poloni
+
+    defaultTheme: auto
+    # disableThemeToggle: true
+    ShowShareButtons: true
+    ShowReadingTime: true
+    # disableSpecial1stPost: true
+    displayFullLangName: true
+    ShowPostNavLinks: true
+    ShowBreadCrumbs: true
+    ShowCodeCopyButtons: true
+    ShowRssButtonInSectionTermList: true
+    ShowToc: true
+    # comments: false
+    # images: ["papermod-cover.png"]
+
+    profileMode:
+        enabled: false
+        title: Dani Poloni
+        imageUrl: "#"
+        # imageTitle: my image
+        # imageWidth: 120
+        # imageHeight: 120
+        buttons:
+            - name: Archives
+              url: archives
+            - name: Tags
+              url: tags
+
+    homeInfoParams:
+        Title: "Worldbuilding, books and stuff"
+        Content: >
+            Welcome and behold.
+    socialIcons:
+        - name: twitter
+          url: "https://twitter.com/danipolony"
+        - name: github
+          url: "https://github.com/danipoloni"
