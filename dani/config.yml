@@ -1,0 +1,11 @@
+baseURL: http://example.org/
+languageCode: 'en-us'
+title: 'Dani Poloni'
+module:
+  imports:
+  - path: github.com/adityatelange/hugo-PaperMod
+
+markup:
+  goldmark:
+    renderer:
+      hardWraps: true
