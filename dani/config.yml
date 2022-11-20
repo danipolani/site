@@ -1,19 +1,90 @@
 baseURL: https://danipoloni.github.io/danipoloni/
-languageCode: 'en-us'
+defaultContentLanguage: ru
 title: 'Dani Poloni'
+paginate: 8
 module:
   imports:
   - path: github.com/adityatelange/hugo-PaperMod
+enableInlineShortcodes: true
+enableRobotsTXT: true
+# buildDrafts: false
+# buildFuture: false
+# buildExpired: false
+enableEmoji: true
+pygmentsUseClasses: true
+# googleAnalytics: UA-123-45
 
 markup:
   goldmark:
     renderer:
       hardWraps: true
 
+
+languages:
+    ru:
+        languageName: ":ru:"
+        languageAltTitle: Русский
+        weight: 1
+        taxonomies:
+          category: categories
+          tag: tags
+          series: series
+        menu:
+            main:
+                - name: Archive
+                  url: archives
+                  weight: 5
+                - name: Search
+                  url: search/
+                  weight: 10
+                - name: Tags
+                  url: tags/
+                  weight: 10
+
+    en:
+        languageName: ":uk:"
+        languageAltTitle: English
+        weight: 2
+        title: Dani Poloni
+        # taxonomies:
+        #   category: FRcategories
+        #   tag: FRtags
+        #   series: FRseries
+        profileMode:
+            enabled: true
+            imageUrl: "https://raw.githubusercontent.com/twitter/twemoji/master/assets/svg/1f317.svg"
+            title: "Worldbuilding, books and stuff"
+            subtitle: Behold.
+            buttons:
+                - name: Blog
+                  url: posts
+                - name: Profile Mode
+                  url: https://github.com/adityatelange/hugo-PaperMod/wiki/Features#profile-mode
+        # menu:
+        #     main:
+        #         - name: Archive
+        #           url: archives/
+        #           weight: 5
+        #         - name: FRTags
+        #           url: frtags
+        #           weight: 10
+        #         - name: FRCategories
+        #           url: frcategories
+        #           weight: 10
+        #         - name: FRSeries
+        #           url: frseries
+        #           weight: 10
+        #         - name: NullLink
+        #           url: "#"
+
 params:
     env: production # to enable google analytics, opengraph, twitter-cards and schema.
     description: "Dani Poloni - Worldbuilding and stuff"
     author: Dani Poloni
+    params:
+    mainSections:
+      - books
+      - poems
 
     defaultTheme: auto
     # disableThemeToggle: true
@@ -32,7 +103,7 @@ params:
     profileMode:
         enabled: false
         title: Dani Poloni
-        imageUrl: "#"
+        imageUrl: "https://raw.githubusercontent.com/twitter/twemoji/master/assets/svg/1f317.svg"
         # imageTitle: my image
         # imageWidth: 120
         # imageHeight: 120
@@ -51,3 +122,9 @@ params:
           url: "https://twitter.com/danipolony"
         - name: github
           url: "https://github.com/danipoloni"
+
+outputs:
+    home:
+        - HTML
+        - RSS
+        - JSON # is necessary
