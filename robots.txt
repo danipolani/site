@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://danipoloni.github.io/danipoloni/sitemap.xml
