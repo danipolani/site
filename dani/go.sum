@@ -1,2 +1,10 @@
 github.com/adityatelange/hugo-PaperMod v0.0.0-20221112073733-4bd96d62719b h1:qVMvCj2yHk9oXrUSKmgtF1H4OiKE9unXClYnhMLOUHA=
 github.com/adityatelange/hugo-PaperMod v0.0.0-20221112073733-4bd96d62719b/go.mod h1:HCHxNMKYdGafUYjVV3ICiAqznZK2yH0iI53jqcDFDdQ=
+github.com/alex-shpak/hugo-book v0.0.0-20221111100854-d5b75f4fb3aa h1:VthswmcR+7NtpamidIRuFq+8JRAz4v+s7xVJ0MmeLqM=
+github.com/alex-shpak/hugo-book v0.0.0-20221111100854-d5b75f4fb3aa/go.mod h1:L4NMyzbn15fpLIpmmtDg9ZFFyTZzw87/lk7M2bMQ7ds=
+github.com/apvarun/digital-garden-hugo-theme v0.0.0-20220901161940-45ed19a194f4 h1:KHOLz2x7rG59pkxk9LskCnmDNHgRrrrrVxG+MzZzTMs=
+github.com/apvarun/digital-garden-hugo-theme v0.0.0-20220901161940-45ed19a194f4/go.mod h1:6gGagKjIWckWAw/dbMwXQpL/Sew5KrwhuSLqhjEfdVc=
+github.com/jakewies/hugo-theme-codex v1.6.0 h1:lmhGUsuy+EFUyUJXaMIejH5x0OoTVUSQeWpO2eL5fV8=
+github.com/jakewies/hugo-theme-codex v1.6.0/go.mod h1:LCO/RurQJx3sm22XEEcxl9tPOMZe/ZiRKn1n8KfcurE=
+github.com/nunocoracao/blowfish/v2 v2.14.1 h1:WCm+FohEVbh5mLEH3c05PJ8u0ErM/Maeo67KE0oaZnc=
+github.com/nunocoracao/blowfish/v2 v2.14.1/go.mod h1:4SkMc+Ht8gpQCwArqiHMBDP3soxi2OWuAhVney+cuyk=

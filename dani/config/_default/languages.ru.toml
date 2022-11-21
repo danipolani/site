@@ -1,0 +1,23 @@
+languageCode = "ru"
+languageName = "Русский"
+displayName = "RU"
+isoCode = "ru"
+weight = 1
+rtl = false
+
+title = "Дани Полони"
+# logo = "img/logo.png"
+description = "Книжки, ворлдбилдинг и всякое"
+# copyright = "Copy, _right?_ :thinking_face:"
+
+dateFormat = "2 January 2006"
+
+[author]
+  name = "Дани Полони"
+  image = "img/dani.jpg"
+  headline = "Некрупное и довольно доброе животное"
+  # bio = "A little bit about you"
+  links = [
+    { twitter = "https://twitter.com/danipolony" },
+    { github = "https://github.com/danipoloni" },
+  ]
