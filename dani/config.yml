@@ -4,8 +4,8 @@ title: 'Dani Poloni'
 paginate: 8
 module:
   imports:
-    # - path: github.com/nunocoracao/blowfish/v2
-  - path: github.com/adityatelange/hugo-PaperMod
+    - path: github.com/nunocoracao/blowfish/v2
+  # - path: github.com/adityatelange/hugo-PaperMod
     # - path: github.com/alex-shpak/hugo-book
     # - path: github.com/apvarun/digital-garden-hugo-theme
 enableInlineShortcodes: true
