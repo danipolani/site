@@ -11,7 +11,7 @@
 # ordered by weight from lowest to highest.
 
 [[main]]
- name = "Books"
+ name = "Книжки"
  pageRef = "books"
  weight = 10
 
@@ -21,12 +21,12 @@
 #  weight = 20
 
 [[main]]
- name = "Poems"
+ name = "Стихи"
  pageRef = "poems"
  weight = 20
 
 [[main]]
- name = "Tags"
+ name = "Теги"
  pageRef = "tags"
  weight = 30
 
@@ -35,24 +35,23 @@
 # The footer menu is displayed at the bottom of the page, just before
 # the copyright notice. Configure as per the main menu above.
 
-
-[[main]]
- name = "Books"
+[[footer]]
+ name = "Книжки"
  pageRef = "books"
  weight = 10
 
-#[[main]]
+#[[footer]]
 #  name = "Categories"
 #  pageRef = "categories"
 #  weight = 20
 
-[[main]]
- name = "Poems"
+[[footer]]
+ name = "Стихи"
  pageRef = "poems"
  weight = 20
 
-[[main]]
- name = "Tags"
+[[footer]]
+ name = "Теги"
  pageRef = "tags"
  weight = 30
 

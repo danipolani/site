@@ -14,7 +14,7 @@ dateFormat = "2 January 2006"
 
 [author]
   name = "Дани Полони"
-  image = "img/dani.jpg"
+  # image = "img/dani.png"
   headline = "Некрупное и довольно доброе животное"
   # bio = "A little bit about you"
   links = [
