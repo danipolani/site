@@ -1,0 +1,23 @@
+languageCode = "en"
+languageName = "English"
+displayName = "EN"
+isoCode = "en"
+weight = 2
+rtl = false
+
+title = "Blowfish"
+# logo = "img/logo.png"
+description = "My awesome website"
+# copyright = "Copy, _right?_ :thinking_face:"
+
+dateFormat = "2 January 2006"
+
+[author]
+  name = "Dani Poloni"
+  image = "img/dani.jpg"
+  headline = "Not rather big and kinda good animal"
+  # bio = "A little bit about you"
+  links = [
+    { twitter = "https://twitter.com/danipolony" },
+    { github = "https://github.com/danipoloni" },
+  ]
