@@ -1,0 +1,3 @@
+[submodule "dani/public"]
+	path = dani/public
+	url = git@github.com:danipoloni/danipoloni.github.io.git
