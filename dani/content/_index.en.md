@@ -1,5 +1,5 @@
 ---
-title: Homepage
+title: Home
 ---
 
 # Hey there, welcome and behold 👋
