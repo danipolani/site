@@ -2,7 +2,7 @@
 title: Homepage
 ---
 
-# Hello11 👋
+# Hey there, welcome and behold 👋
 
 → [Books](./books)
 → [Poems](./poems)

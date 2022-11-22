@@ -7,7 +7,7 @@
 defaultContentLanguage = "ru"
 
 enableRobotsTXT = true
-paginate = 20
+paginate = 8
 summaryLength = 30
 
 buildDrafts = false

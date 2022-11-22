@@ -14,9 +14,9 @@ dateFormat = "2 January 2006"
 
 [author]
   name = "Дани Полони"
-  # image = "img/dani.png"
-  headline = "Некрупное и довольно доброе животное"
-  # bio = "A little bit about you"
+  image = "img/l23.png"
+  headline = "Книжки, ворлдбилдинг и всякое"
+  bio = "Некрупное и довольно доброе животное"
   links = [
     { twitter = "https://twitter.com/danipolony" },
     { github = "https://github.com/danipoloni" },

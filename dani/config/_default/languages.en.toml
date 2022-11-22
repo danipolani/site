@@ -14,9 +14,9 @@ dateFormat = "2 January 2006"
 
 [author]
   name = "Dani Poloni"
-  # image = "img/dani.png"
-  headline = "Not rather big and kinda good animal"
-  # bio = "A little bit about you"
+  image = "img/l23.png"
+  headline = "Books, worldbuilding and stuff"
+  bio = "Not rather big and kinda friendly animal"
   links = [
     { twitter = "https://twitter.com/danipolony" },
     { github = "https://github.com/danipoloni" },
