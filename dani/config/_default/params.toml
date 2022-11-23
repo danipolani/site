@@ -95,11 +95,11 @@ mainSections = ["books", "poems"]
   # domain = "llama.yoursite.com"
 
 [buymeacoffee]
-  # identifier = ""
-  # globalWidget = true
-  # globalWidgetMessage = "Hello"
-  # globalWidgetColor = "#FFDD00"
-  # globalWidgetPosition = "Right"
+  identifier = "danipoloni"
+  globalWidget = true
+  globalWidgetMessage = "Hello"
+  globalWidgetColor = "#5F7FFF"
+  globalWidgetPosition = "Right"
 
 [verification]
   # google = ""
