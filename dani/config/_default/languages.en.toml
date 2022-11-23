@@ -19,5 +19,6 @@ dateFormat = "2 January 2006"
   bio = "Not rather big and kinda friendly animal"
   links = [
     { twitter = "https://twitter.com/danipolony" },
+    { mastodon = "https://mastodon.ml/@danipoloni" },
     { github = "https://github.com/danipoloni" },
   ]
