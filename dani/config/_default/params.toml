@@ -97,7 +97,7 @@ mainSections = ["books", "poems"]
 [buymeacoffee]
   identifier = "danipoloni"
   globalWidget = true
-  globalWidgetMessage = "Hello"
+  # globalWidgetMessage = "Hello"
   globalWidgetColor = "#5F7FFF"
   globalWidgetPosition = "Right"
 
