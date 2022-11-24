@@ -26,6 +26,11 @@
  weight = 20
 
 [[main]]
+ name = "Languages"
+ pageRef = "languages"
+ weight = 21
+
+[[main]]
  name = "Tags"
  pageRef = "tags"
  weight = 30
@@ -36,7 +41,7 @@
 # the copyright notice. Configure as per the main menu above.
 
 
-[[main]]
+[[footer]]
  name = "Books"
  pageRef = "books"
  weight = 10
@@ -46,12 +51,17 @@
 #  pageRef = "categories"
 #  weight = 20
 
-[[main]]
+[[footer]]
  name = "Poems"
  pageRef = "poems"
  weight = 20
 
-[[main]]
+[[footer]]
+ name = "Languages"
+ pageRef = "languages"
+ weight = 21
+
+[[footer]]
  name = "Tags"
  pageRef = "tags"
  weight = 30

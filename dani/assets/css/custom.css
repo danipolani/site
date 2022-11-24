@@ -1,0 +1,14 @@
+@font-face {
+    font-family: nomumu;
+    src: url('/fonts/nomumu251.otf');
+}
+
+.nomumu-font {
+    font-family: nomumu;
+    font-size: 1em;
+}
+
+.nomumu-font-big {
+    font-family: nomumu;
+    font-size: 2em;
+}
