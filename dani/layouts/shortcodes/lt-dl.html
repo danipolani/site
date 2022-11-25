@@ -1,0 +1,12 @@
+{{ $word := .Get 0 }}
+{{ $nomumu := .Get 1 }}
+{{ $ipa := .Get 2 }}
+{{ $parts := .Get 3 }}
+{{ $translations := .Get 4 }}
+
+<span class="dl"><b>{{ $word }}</b></span>
+<span class="dl nomumu-font">{{ $nomumu }}</span>
+<span class="dl">/{{ $ipa }}/</span>
+<span class="dl dl-parts">{{ $parts }}</span>
+<span class="dl">{{ $translations }}</span>
+<br>

@@ -12,3 +12,12 @@
     font-family: nomumu;
     font-size: 2em;
 }
+
+.dl-parts {
+    color: gray;
+}
+
+.dl {
+    font-style: normal;
+    font-weight: normal;
+}
