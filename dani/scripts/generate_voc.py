@@ -76,6 +76,7 @@ if __name__ == "__main__":
     voc["ipa"] = voc.apply(lambda x: to_ipa(x.word, letters, x.stress), axis=1)
     voc["cyr"] = voc["word"].apply(lambda x: to_cyr(x, letters))
     voc["head"] = voc["cyr"].apply(lambda x: x[0])
+    voc = voc.sort_values(by=['cyr'])
     print("generation done")
 
     print(f"saving to csv: {RES_PATH}")
