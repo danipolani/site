@@ -1,0 +1,89 @@
+{{ $dhead := .Get 0 }}
+
+{{ $sep := "," }}
+{{ $vocURL := "csv/lt/vocabulary.csv" }}
+{{ $vocabulary := getCSV $sep $vocURL }}
+
+{{ $url := "csv/lt/transliterations.csv" }}
+{{ $letters := getCSV $sep $url }}
+
+{{ range $i, $a := after 1 $vocabulary }}
+    {{ $head := index . 5 }}
+    {{ if eq $head $dhead }}
+
+        {{ $word := index . 0 }}
+        {{ $parts := index . 1 }}
+        {{ $translations := index . 2 }}
+        {{ $stress := "" }}
+        {{ if ne (index . 4) "" }}
+            {{ $stress = int (index . 4) }}
+        {{ end }}
+
+        {{ $cap := "" }}
+        
+        {{ $chars := split $word "" }}
+        
+        {{ $cyr := slice }}
+        {{ $nSyl := 0 }}
+        {{ range $i, $c := $chars }}
+            {{ range after 1 $letters }}
+        
+                {{ $l := index . 0 }}
+                {{ $cyrL := index . 1  }}
+                {{ $syl := index . 4 }}
+        
+                {{ if eq (lower $c) $l }}
+                    {{ $cyr = $cyr | append $cyrL }}
+                    {{ $nSyl = int $syl | add $nSyl }}
+                {{end}}
+        
+            {{ end }}
+        {{ end }} 
+        
+        {{ $cyr2 := delimit $cyr "" }}
+        {{ $cyr2 := replaceRE "йа" "я" $cyr2 }}
+        {{ $cyr2 := replaceRE "мй$" "мь" $cyr2 }}
+        {{ $cyr2 := replaceRE "лй$" "ль" $cyr2 }}
+        {{ $cyr2 := replaceRE "нй$" "нь" $cyr2 }}
+        {{ $cyr2 := replaceRE "^е" "э" $cyr2 }}
+        
+        {{ $ipa := slice }}
+        {{ $stressMark := "ˈ" }}
+        {{ if eq $nSyl 1 }}
+            {{ $stressMark = "" }}
+        {{ end }}
+        {{ if eq $stress "" }}
+            {{ $ipa = $ipa | append $stressMark}}
+        {{ end }}
+        {{ range $i, $c := $chars }}
+            {{ range after 1 $letters }}
+        
+                {{ $l := index . 0 }}
+                {{ $ipaL := index . 3 }}
+        
+                {{ if eq (lower $c) $l }}
+                    {{ if eq $i $stress }}
+                        {{ $ipa = $ipa | append $stressMark}}
+                    {{ end }}
+                    {{ $ipa = $ipa | append $ipaL }}
+                {{end}}
+        
+            {{ end }}
+        {{ end }} 
+        
+        {{ $ipa2 := delimit $ipa "" }}
+        {{ $ipa2 := replaceRE "mj" "mʲ" $ipa2 }}
+        {{ $ipa2 := replaceRE "lj" "ʎ" $ipa2 }}
+        {{ $ipa2 := replaceRE "nj" "ɲ" $ipa2 }}
+        
+        <span class="dl {{ if eq $cap 1 }}dl-cap{{end}}"><b>{{ $cyr2 }}</b></span>
+        <span class="dl nomumu-font">{{ $word }}</span>
+        <span class="dl">/{{ $ipa2 }}/</span>
+        {{ if $parts }}<span class="dl dl-parts">{{ $parts }}</span>{{ end }}
+        {{ if $translations }}<span class="dl">{{ $translations }}</span>{{ end }}
+        <br>
+
+    {{ else }}
+    {{ end }}
+
+{{ end }}

@@ -11,25 +11,29 @@ tags:
   - Блаженство
 ---
 
-{{< lt/dr "nevi" >}}
+{{< lt/dc "nevi" >}}
 
-{{< lt/dr "NEVI" >}}
+{{< lt/dc "NEVI" >}}
 
-{{< lt/dr "ezoncej" >}}
+{{< lt/dc "ezoncej" >}}
 
-{{< lt/dr "jalon" >}}
+{{< lt/dc "jalon" >}}
 
-{{< lt/dr "pelj" >}}
+{{< lt/dc "pelj" >}}
 
-{{< lt/dr "ctenja" >}}
+{{< lt/dc "ctenja" >}}
 
-{{< lt/dr "ctenja" "n." "Штеня (имя)" 1 1 >}}
+{{< lt/dc "ctenja" "n." "Штеня (имя)" 1 1 >}}
 
-{{< lt/dr w="ctenja" c=1 >}}
+{{< lt/dc w="ctenja" c=1 >}}
 
-{{< lt/dr w="ctenja" c=1 s=3 >}}
+{{< lt/dc w="ctenja" c=1 s=3 >}}
 
-{{< lt/dr "mjali" >}}
+{{< block >}}
+{{< lt/dc "mjali" >}}
 
-{{< lt/dr "xo" >}}
+{{< lt/dc "xo" >}}
 
+{{< lt/dc "ctenja" >}}
+
+{{< /block >}}

@@ -1,0 +1,29 @@
+{{ $dhead := .Get 0 }}
+
+{{ $sep := "," }}
+{{ $vocURL := "csv/lt/vocabulary-pregen.csv" }}
+{{ $vocabulary := getCSV $sep $vocURL }}
+
+{{ range $i, $a := after 1 $vocabulary }}
+    {{ $head := index . 5 }}
+    {{ if eq $head $dhead }}
+
+        {{ $word := index . 0 }}
+        {{ $parts := index . 1 }}
+        {{ $translations := index . 2 }}
+        {{ $ipa := index . 6 }}
+        {{ $cyr := index . 7 }}
+
+        {{ $cap := "" }}
+        
+        <span class="dl {{ if eq $cap 1 }}dl-cap{{end}}"><b>{{ $cyr }}</b></span>
+        <span class="dl nomumu-font">{{ $word }}</span>
+        <span class="dl">/{{ $ipa }}/</span>
+        {{ if $parts }}<span class="dl dl-parts">{{ $parts }}</span>{{ end }}
+        {{ if $translations }}<span class="dl">{{ $translations }}</span>{{ end }}
+        <br>
+
+    {{ else }}
+    {{ end }}
+
+{{ end }}
