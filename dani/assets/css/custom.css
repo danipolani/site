@@ -21,3 +21,7 @@
     font-style: normal;
     font-weight: normal;
 }
+
+.dl-cap {
+    text-transform: capitalize;
+}
