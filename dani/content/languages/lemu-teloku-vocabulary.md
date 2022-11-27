@@ -12,65 +12,65 @@ tags:
 ---
 
 ## А
-{{< lt/vocabulary-pregen "а" >}}
+{{< lt/vocabulary-ru "а" >}}
 
 ## Б
-{{< lt/vocabulary-pregen "б" >}}
+{{< lt/vocabulary-ru "б" >}}
 
 ## В
-{{< lt/vocabulary-pregen "в" >}}
+{{< lt/vocabulary-ru "в" >}}
 
 ## Г
-{{< lt/vocabulary-pregen "г" >}}
+{{< lt/vocabulary-ru "г" >}}
 
 ## Д
-{{< lt/vocabulary-pregen "д" >}}
+{{< lt/vocabulary-ru "д" >}}
 
 ## З
-{{< lt/vocabulary-pregen "з" >}}
+{{< lt/vocabulary-ru "з" >}}
 
 ## И
-{{< lt/vocabulary-pregen "и" >}}
+{{< lt/vocabulary-ru "и" >}}
 
 ## Й
-{{< lt/vocabulary-pregen "й" >}}
+{{< lt/vocabulary-ru "й" >}}
 
 ## К
-{{< lt/vocabulary-pregen "к" >}}
+{{< lt/vocabulary-ru "к" >}}
 
 ## Л
-{{< lt/vocabulary-pregen "л" >}}
+{{< lt/vocabulary-ru "л" >}}
 
 ## М
-{{< lt/vocabulary-pregen "м" >}}
+{{< lt/vocabulary-ru "м" >}}
 
 ## Н
-{{< lt/vocabulary-pregen "н" >}}
+{{< lt/vocabulary-ru "н" >}}
 
 ## О
-{{< lt/vocabulary-pregen "о" >}}
+{{< lt/vocabulary-ru "о" >}}
 
 ## П
-{{< lt/vocabulary-pregen "п" >}}
+{{< lt/vocabulary-ru "п" >}}
 
 ## Р
-{{< lt/vocabulary-pregen "р" >}}
+{{< lt/vocabulary-ru "р" >}}
 
 ## С
-{{< lt/vocabulary-pregen "с" >}}
+{{< lt/vocabulary-ru "с" >}}
 
 ## Т
-{{< lt/vocabulary-pregen "т" >}}
+{{< lt/vocabulary-ru "т" >}}
 
 ## У
-{{< lt/vocabulary-pregen "у" >}}
+{{< lt/vocabulary-ru "у" >}}
 
 ## Ш
-{{< lt/vocabulary-pregen "ш" >}}
+{{< lt/vocabulary-ru "ш" >}}
 
 ## Э
-{{< lt/vocabulary-pregen "э" >}}
+{{< lt/vocabulary-ru "э" >}}
 
 ## Я
-{{< lt/vocabulary-pregen "я" >}}
+{{< lt/vocabulary-ru "я" >}}
 

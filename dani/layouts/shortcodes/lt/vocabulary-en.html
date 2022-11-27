@@ -1,12 +1,12 @@
-{{/*  vocabulary entry (cyrillic)  */}}
-{{ $word := .Get 0 }}
+{{ $dhead := .Get 0 }}
 
 {{ $sep := "," }}
-{{ $vocURL := "csv/lt/vocabulary.ru.csv" }}
+{{ $vocURL := "csv/lt/vocabulary.en.csv" }}
 {{ $vocabulary := getCSV $sep $vocURL }}
 
 {{ range $i, $a := after 1 $vocabulary }}
-    {{ if eq $word (index . 0) }}
+    {{ $head := index . 4 }}
+    {{ if eq $head $dhead }}
 
         {{ $word := index . 0 }}
         {{ $parts := index . 1 }}
