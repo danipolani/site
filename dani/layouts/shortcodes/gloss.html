@@ -1,0 +1,72 @@
+{{ $adaptation := .Get "a" }}
+{{ $phrase := .Get "p" }}
+{{ $gloss := .Get "g" }}
+{{ $translation := .Get "t" }}
+
+{{ $phraseParts := split $phrase " " }}
+{{ $glossParts := split $gloss " " }}
+{{ $adaptParts := split $adaptation " " }}
+
+<table class="gloss">
+    {{ if ne (len $adaptParts) (len $glossParts) }}
+        <tr>
+            <td>
+                <b>⚠️ Gloss structure is not correct! Please check.</b>
+            </td>
+        </tr>
+        {{ if ne $phrase "" }}
+            <tr class="nomumu-font">
+                <td>
+                    {{ $phrase }}
+                </td>
+            </tr>
+        {{ end }}
+        {{ if ne $adaptation "" }}
+        <tr>
+            <td colspan="100%">
+                <strong>{{ $adaptation }}</strong>
+            </td>
+        </tr>
+    {{ end }}
+        {{ if ne $gloss "" }}
+            <tr>
+                <td>
+                    {{ $gloss }}
+                </td>
+            </tr>
+        {{ end }}
+    {{ else }}
+        {{ if ne $phrase "" }}
+            <tr class="nomumu-font">
+                {{ range $phraseParts }}
+                <td>
+                    {{ . }}
+                </td>
+                {{ end }}
+            </tr>
+        {{ end }}
+        {{ if ne $adaptation "" }}
+            <tr>
+                {{ range $adaptParts }}
+                <td>
+                    <strong>{{ . }}</strong>
+                </td>
+                {{ end }}
+            </tr>
+        {{ end }}
+        {{ if ne $gloss "" }}
+            <tr>
+                {{ range $glossParts }}
+                <td class="detail">
+                    {{ . }}
+                </td>
+                {{ end }}
+            </tr>
+        {{ end }}
+    {{ end }}
+        {{ if ne $translation "" }}
+            <tr>
+                <td colspan="100%">"{{ $translation }}"</td>
+            </tr>
+        {{ end }}
+</table>
