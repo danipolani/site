@@ -1,72 +1,196 @@
-{{ $adaptation := .Get "a" }}
-{{ $phrase := .Get "p" }}
-{{ $gloss := .Get "g" }}
-{{ $translation := .Get "t" }}
+{{ $phrase := .Get "phrase" }}
+{{ $simplePhrase := .Get "sm_phrase" }}
+{{ $transcription := .Get "transcript" }}
+{{ $simpleTranscription := .Get "sm_transcript" }}
+{{ $simpleGloss := .Get "sm_gloss" }}
+{{ $detailedGloss := .Get "dt_gloss" }}
+{{ $translation := .Get "translation" }}
+{{ $noSwitch := .Get "noswitch" }}
 
 {{ $phraseParts := split $phrase " " }}
-{{ $glossParts := split $gloss " " }}
-{{ $adaptParts := split $adaptation " " }}
+{{ if eq $simplePhrase "" }}
+    {{ $simplePhrase = replace $phrase "-" "" }}
+{{ end }}
+{{ $simplePhraseParts := split $simplePhrase " " }}
 
-<table class="gloss">
-    {{ if ne (len $adaptParts) (len $glossParts) }}
+{{ $simpleGlossParts := split $simpleGloss " " }}
+{{ $detailedGlossParts := split $detailedGloss " " }}
+
+{{ $transcriptionParts := split $transcription " " }}
+{{ if eq $simpleTranscription "" }}
+    {{ $simpleTranscription = replace $transcription "-" "" }}
+{{ end }}
+{{ $simpleTranscriptionParts := split $simpleTranscription " " }}
+
+{{ $seed := $phrase }}
+{{ $id := delimit (shuffle (split (md5 $seed) "" )) "" }}
+
+{{ $error := false }}
+{{ if ne $simpleGloss "" }}
+    {{ if ne (len $simplePhraseParts) (len $simpleGlossParts) }}
+        {{ $error = true }}
+    {{ end }}
+{{ end }}
+{{ if ne $detailedGloss "" }}
+    {{ if ne (len $phraseParts) (len $detailedGlossParts) }}
+        {{ $error = true }}
+    {{ end }}
+{{ end }}
+{{ if ne $phrase "" }}
+    {{ if ne (len $simplePhraseParts) (len $simpleTranscriptionParts) }}
+        {{ $error = true }}
+    {{ end }}
+{{ end }}
+
+<blockquote class="gloss-wrapper">
+    <table class="gloss" id="{{ $id }}">
+        {{ if not $noSwitch }}
         <tr>
-            <td>
-                <b>⚠️ Gloss structure is not correct! Please check.</b>
+            <td class="switch" colspan="100%">
+                <a onclick="showSimple({{$id}})">min</a>
+                <a onclick="showDetailed({{$id}})">det</a>
             </td>
         </tr>
-        {{ if ne $phrase "" }}
-            <tr class="nomumu-font">
-                <td>
-                    {{ $phrase }}
-                </td>
-            </tr>
         {{ end }}
-        {{ if ne $adaptation "" }}
-        <tr>
-            <td colspan="100%">
-                <strong>{{ $adaptation }}</strong>
-            </td>
-        </tr>
-    {{ end }}
-        {{ if ne $gloss "" }}
+        {{ if $error }}
             <tr>
                 <td>
-                    {{ $gloss }}
+                    <b>⚠️ Gloss structure is not correct! Please check.</b>
                 </td>
             </tr>
+        {{ else }}
+            {{ if ne $phrase "" }}
+                <tr class="nomumu-font simple">
+                    {{ range $simplePhraseParts }}
+                    <td>
+                        {{ . }}
+                    </td>
+                    {{ end }}
+                </tr>
+                <tr class="nomumu-font detailed">
+                    {{ range $phraseParts }}
+                    <td>
+                        {{ . }}
+                    </td>
+                    {{ end }}
+                </tr>
+            {{ end }}
+            {{ if ne $transcription "" }}
+                <tr class="simple">
+                    {{ range $simpleTranscriptionParts }}
+                    <td>
+                        <strong>{{ . }}</strong>
+                    </td>
+                    {{ end }}
+                </tr>
+                <tr class="detailed">
+                    {{ range $transcriptionParts }}
+                    <td>
+                        <strong>{{ . }}</strong>
+                    </td>
+                    {{ end }}
+                </tr>
+            {{ end }}
+            {{ if ne $detailedGloss "" }}
+                <tr class="detailed">
+                    {{ range $detailedGlossParts }}
+                    <td class="">
+                        {{ . }}
+                    </td>
+                    {{ end }}
+                </tr>
+            {{ end }}
+            {{ if ne $simpleGloss "" }}
+                <tr class="simple">
+                    {{ range $simpleGlossParts }}
+                    <td class="">
+                        {{ . }}
+                    </td>
+                    {{ end }}
+                </tr>
+            {{ end }}
         {{ end }}
-    {{ else }}
-        {{ if ne $phrase "" }}
-            <tr class="nomumu-font">
-                {{ range $phraseParts }}
-                <td>
-                    {{ . }}
-                </td>
-                {{ end }}
-            </tr>
-        {{ end }}
-        {{ if ne $adaptation "" }}
-            <tr>
-                {{ range $adaptParts }}
-                <td>
-                    <strong>{{ . }}</strong>
-                </td>
-                {{ end }}
-            </tr>
-        {{ end }}
-        {{ if ne $gloss "" }}
-            <tr>
-                {{ range $glossParts }}
-                <td class="detail">
-                    {{ . }}
-                </td>
-                {{ end }}
-            </tr>
-        {{ end }}
-    {{ end }}
-        {{ if ne $translation "" }}
-            <tr>
-                <td colspan="100%">"{{ $translation }}"</td>
-            </tr>
-        {{ end }}
-</table>
+            {{ if ne $translation "" }}
+                <tr>
+                    <td colspan="100%">"{{ $translation }}"</td>
+                </tr>
+            {{ end }}
+    </table>
+</blockquote>
+
+<style>
+    .gloss-wrapper {
+        font-style: normal;
+        font-weight: normal;
+        margin-top: 0;
+    }
+
+    .gloss {
+        margin-top: 0;
+        width: auto;
+        /* font-size: 1em; */
+    }
+    
+    .gloss tr {
+        border: 0;
+    }
+    
+    .gloss td {
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-right: 2px;
+    }
+    
+    .gloss .switch {
+        font-weight: normal;
+        font-size: 0.8em;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        text-align: right;
+        font-variant: small-caps;
+    }
+    
+    .gloss .switch a {
+        color: gray;
+    }
+
+    .gloss tr.simple {
+        display: cell;
+    }
+
+    .gloss tr.detailed {
+        display: none;
+        /* font-feature-settings:"smcp"; */
+        /* font-variant: small-caps; */
+    }
+</style>
+
+<script>
+    function showDetailed(id) {
+        var i, simple, detailed;
+        simple = document.getElementById(id).getElementsByClassName("simple");
+        for (i = 0; i < simple.length; i++) {
+            simple[i].style.display = "none";
+        }
+
+        detailed = document.getElementById(id).getElementsByClassName("detailed")
+        for (i = 0; i < detailed.length; i++) {
+            detailed[i].style.display = "table-row";
+        }
+
+        {{/*  evt.currentTarget.className += " active";  */}}
+    }
+    function showSimple(id) {
+        var i, simple, detailed;
+        simple = document.getElementById(id).getElementsByClassName("simple");
+        for (i = 0; i < simple.length; i++) {
+          simple[i].style.display = "table-row";
+        }
+  
+        detailed = document.getElementById(id).getElementsByClassName("detailed")
+        for (i = 0; i < detailed.length; i++) {
+          detailed[i].style.display = "none";
+        }
+        {{/*  evt.currentTarget.className += " active";  */}}
+    }
+</script>

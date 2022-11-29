@@ -25,22 +25,3 @@
 .dl-cap {
     text-transform: capitalize;
 }
-
-.gloss {
-    width: auto;
-    /* font-size: 1em; */
-}
-
-.gloss tr {
-    border: 0;
-}
-
-.gloss td {
-    padding-top: 2px;
-    padding-bottom: 2px;
-}
-
-.gloss td.detail {
-    /* font-feature-settings:"smcp"; */
-    /* font-variant: small-caps; */
-}
