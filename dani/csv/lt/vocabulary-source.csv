@@ -222,4 +222,5 @@ pliq,pron.,"им, ею (субъект 3го лица)","by him, her, it (3rd pe
 plac,pron.,"его, её (объект 3го лица)","of him, her, it (3rd person object)",
 lemu,n.,язык,language,
 katomu,v.,съесть (завершённое действие),to eat (completed action),
-kaluni,v.,погладить (завершённое дествие),to caress (completed action),
+kaluni,v.,погладить (завершённое действие),to caress (completed action),
+loc,pron.,того (местоимение объекта в генетиве),of that (genetive object pronoun),
