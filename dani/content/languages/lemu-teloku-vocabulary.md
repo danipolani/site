@@ -4,7 +4,7 @@ date: 2022-11-25T23:11:33+04:00
 draft: false
 summary: "Словарь Лему Телоку"
 series: ["Lemu Teloku"]
-series_order: 5
+series_order: 11
 tags:
   - Лему Телоку
   - Словарь

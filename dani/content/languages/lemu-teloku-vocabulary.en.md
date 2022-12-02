@@ -4,7 +4,7 @@ date: 2022-11-25T23:11:33+04:00
 draft: false
 summary: "Lemu Teloku vocabulary"
 series: ["Lemu Teloku"]
-series_order: 5
+series_order: 11
 tags:
   - Lemu Teloku
   - Vocabulary
