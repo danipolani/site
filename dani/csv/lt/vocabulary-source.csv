@@ -2,11 +2,11 @@ word,pos,ru,en,stress
 a,prep.,"в, у, там-где",at,
 abika,n.,"стиль, подход","style, approach",
 adi,n.,"коробка, контейнер, отделение","box, container",
-ale,"n., v.","суета, беспорядочное движение","mess, chaotic movement",
+ale,nv.,"суета, беспорядочное движение","mess, chaotic movement",
 aligra,prep.,"среди, промеж","among, between",
 almjavo,n.,"хоровод, групповой танец",group dance,2
 alumto,n.,искусство,art,1
-amano,"n., v.","измерение, измерять, оценка, оценивать","measurement, evaluation",1
+amano,nv.,"измерение, измерять, оценка, оценивать","measurement, evaluation",1
 amoj,n.,"наука, магия","science, magic",
 ampa,n.,время,time,
 ana,prep.,перед,in front of,
@@ -18,15 +18,15 @@ araci,n.,небо,sky,1
 aro,n.,"плуг, трактор","plow, tractor",
 aroj,adj.,"сильный, мощный","strong, potent",
 azumo,n.,дорога,road,1
-beka,"n., v.","начало, начинать","start, to begin",
+beka,nv.,"начало, начинать","start, to begin",
 biramo,n.,"гроза, гром",thunder,2
 bo,interj.,не,not,
 bolom,n.,ложка,spoon,
 bre,prep.,"от, прочь","away, from",
 bri,,"всё, все","all, everything",
 bu,interj.,нет,no,
-vana,"n., v.","готовка, готовить","cooking, to cook",
-ve,"n., v.","разговор, говорить","talk, to talk",
+vana,nv.,"готовка, готовить","cooking, to cook",
+ve,nv.,"разговор, говорить","talk, to talk",
 vi,conj.,и (для действий),and,
 vikej,adj.,"уникальный, редкий, самобытный","unique, rare, original",
 viki,n.,"редкость, своеобразие, уникальность","uniqueness, originality",
@@ -39,18 +39,18 @@ graveka,,,,
 dakapka,n.,"глаз, глаза","eye, eyes",
 dapkiu,n.,два глаза,two eyes,
 dapo,n.,собака,dog,
-dari,"n., v.","взгляд, смотреть","look, gaze, to look",
+dari,nv.,"взгляд, смотреть","look, gaze, to look",
 di,prep.,"над, выше",above,
 dinej,adj.,вкусный,tasty,
 doj,adj.,слабый,weak,
 doli,n.,вода,water,
-dutru,"n., v.","стон, стонать","moan, to moan",
-zavi,"n., v.","желание, хотеть","wish, to want",
+dutru,nv.,"стон, стонать","moan, to moan",
+zavi,nv.,"желание, хотеть","wish, to want",
 zizej,adj.,красивый,"beautiful, nice",
 zizi,n.,красота,beauty,
-zume,"n., v.","тащить, перемещать","to carry, to bring",
+zume,nv.,"тащить, перемещать","to carry, to bring",
 ida,n.,слух,"hearing, to hear",
-ikulu,"n., v.","управление, управлять, контролировать","control, to control",
+ikulu,nv.,"управление, управлять, контролировать","control, to control",
 imira,,,,
 imole,n.,брызги,"spray, splash",1
 ivli,n.,овца,sheep,
@@ -58,7 +58,7 @@ jej,prep.,из,out of,
 kibrej,adj.,простой,simple,
 kitra,n.,"штаны, брюки","pants, trousers",
 kti,prep.,"для, для пользы, в интересах",for,
-kuta,"n., v.","сон как процесс, спать","sleep, to sleep",
+kuta,nv.,"сон как процесс, спать","sleep, to sleep",
 qe,ptcl.,<маркер субъекта>,<subject marker>,
 laka,n.,суп,soup,
 lej,prep.,по отношению к,to,
@@ -67,53 +67,53 @@ li,ptcl.,<маркер объекта>,<object marker>,
 likvami,n.,повар,cook (profession),3
 lilej,adj.,мягкий,soft,
 lja,n.,речь,speech,
-logri,"n., v.","дрожь, дрожать","(to) shiver, (to) tremble",
+logri,nv.,"дрожь, дрожать","(to) shiver, (to) tremble",
 loki,n.,человек,"human, person",
 luma,n.,сон (сновидение),dream (while sleeping),
 lumekli,n.,осень,autumn,
-luni,"n., v.","любовь, глажка, любить, гладить","(to) love, (to) caress",
-luninel,"n., v.","любовь к себе, любить себя",self-love,
+luni,nv.,"любовь, глажка, любить, гладить","(to) love, (to) caress",
+luninel,nv.,"любовь к себе, любить себя",self-love,
 maj,interj.,да,yes,
 mar,n.,огонь,fire,
-marva,"n., v.","сжигание, жечь","burning, to burn",
-mato,"n., v.","обучение, учить","teaching, to teach",
+marva,nv.,"сжигание, жечь","burning, to burn",
+mato,nv.,"обучение, учить","teaching, to teach",
 me,prep.,"поверх, на",on,
 mekoj,adj.,"полный (целостный, не частичный)","full, complete",
 memoj,adj.,"исправный, дающий нужный результат","fine, sound, providing expected results",
 meva,n.,дом,home,
 milamo,n.,торговля,trade,2
-milo,"n., v.","процветание, процветать",(to) thrive,
+milo,nv.,"процветание, процветать",(to) thrive,
 mimuca,n.,бочка,barrel,2
 miramba,n.,документ,document,2
 mirina,n.,ветер,wind,2
-mivula,"n., v.","испражнение, испражняться",defecation ,
+mivula,nv.,"испражнение, испражняться",defecation ,
 mja,interj.,да,yes,
-mjaki,"n., v.","радость, веселье, радоваться",,
+mjaki,nv.,"радость, веселье, радоваться",,
 mjali,n.,кошка,cat,
-mjavo,"n., v.","вращение, вращаться","(to) spin, to rotate",
-momebra,"n., v.","усилие, старание, прилагать усилие","effort, to make an effort",2
+mjavo,nv.,"вращение, вращаться","(to) spin, to rotate",
+momebra,nv.,"усилие, старание, прилагать усилие","effort, to make an effort",2
 momej,n.,сердце,heart,
 momi,n.,"середина, центр","center, middle",
 mopi,n.,весна,spring (season),
 mumo,n.,солнце,sun,
 naj,n.,"лист, листва","leaf, foliage",
 najdeli,n.,кувшинка,water lily,3
-nami,"n., v.","уверенность, цель, быть уверенным","goal, confidence, to be confident",
+nami,nv.,"уверенность, цель, быть уверенным","goal, confidence, to be confident",
 nej,prep.,за (следом за),after (following),
 nej,conj.,и (для предметов),and,
 neme,prep.,под,under,
 nerabra,,,,
 nevi,n.,девочка,girl,
 nilekla,,,,
-niluni,"n., v.",любовь или глажка по отношению к себе,"self-love, self-caress",2
-nimato,"n., v.","обучение себя, учиться","learning, to learn",2
+niluni,nv.,любовь или глажка по отношению к себе,"self-love, self-caress",2
+nimato,nv.,"обучение себя, учиться","learning, to learn",2
 nimej,adj.,"денежный (выгодный, прибыльный)",profitable,
 nimeva,v.,быть дома,to be at home,2
 nimu,n.,деньги,money,
-niqegra,"n., v.","поцелуй, целовать",(to) kiss,2
-nitimi,"n., v.","восторг, восхищение, восхищаться","delight, to admire",2
+niqegra,nv.,"поцелуй, целовать",(to) kiss,2
+nitimi,nv.,"восторг, восхищение, восхищаться","delight, to admire",2
 no,n.,буква,"letter, character",
-nokadma,"n., v.","падение, падать",(to) fall,2
+nokadma,nv.,"падение, падать",(to) fall,2
 nokidu,,,,
 notro,n.,модель,"model, image",
 nuketra,n.,,,
@@ -125,7 +125,7 @@ oro,pron.,"какой, как (по качеству)","what, how",
 oru,pron.,"какие, как (по качеству) – к хабитуальными действиям. ","what, how (to habitual actions)",
 pali,n.,дождь,rain,
 paligre,n.,,,
-pani,"n., v.","движение, поход, путь, идти","movement, (to) walk, path",
+pani,nv.,"движение, поход, путь, идти","movement, (to) walk, path",
 pek,prep.,"с помощью, с использованием","using, by, with",
 pep,n.,отец,father,
 pi,prep.,за (сзади),behind,
@@ -133,13 +133,13 @@ pikabro,n.,парадокс,paradox,
 pikotru,n.,"вращение, циркуляция",circulation,
 pimaki,n.,парк,park,2
 pimi,n.,дерево,tree,
-pomi,"n., v.","бег, бежать",(to) run,
+pomi,nv.,"бег, бежать",(to) run,
 ponej,adj.,"хороший, добрый, дружелюбный","good, kind, friendly",
 ponipi,n.,друг,friend,2
 pop,prep.,"к, на, под, для",for,
 ratri,n.,"крыша, кровля","roof, housetop",
 re,n.,поле,field,
-rumpa,"n., v.","работа, работать",(to) work,
+rumpa,nv.,"работа, работать",(to) work,
 sel,n.,холод,cold,
 selej,adj.,холодный,cold,
 sme,n.,цвет,color,
@@ -147,9 +147,9 @@ sopo,n.,рука,arm,
 su,prep.,"внутри, в","in, inside",
 tec,prep.,от (всё от),of,
 teloko,n.,"сообщество, люди, народ","people, community",2
-tomu,"n., v.","еда как процесс, есть","eating, to eat",
+tomu,nv.,"еда как процесс, есть","eating, to eat",
 tra,prep.,"как, подобно","as, like, alike",
-xama,pron.,когда,when,
+xampa,pron.,когда,when,
 xap,pron.,кем,"by who, with whom",
 xo,pron.,"что, кто","who, what",
 xoc,pron.,"кого, чего, чей","whose, whats, of-what",
@@ -162,17 +162,17 @@ cmisotru,n.,нож,knife,2
 cmjapki,n.,сопля,snot,
 cmobumu,n.,формула,formula,3
 cnujm,adj.,"любой, всякий","every, any",
-cnuvi,"n., v.","узнавание, открытие, обнаружение, узнавать, обнаруживать","finding, discovery, to find, to discover",
+cnuvi,nv.,"узнавание, открытие, обнаружение, узнавать, обнаруживать","finding, discovery, to find, to discover",
 coc,prep.,от (часть от),of,
 cpodo,n.,камень,"stone, rock",
 cpoj,n.,дверь,door,
-crakli,"n., v.","внезапное окружение, появление, появляться, окружать","unexpected appearance, to appear suddenly, to encircle",
-cruni,"n., v.","улыбка, улыбаться",(to) smile,
+crakli,nv.,"внезапное окружение, появление, появляться, окружать","unexpected appearance, to appear suddenly, to encircle",
+cruni,nv.,"улыбка, улыбаться",(to) smile,
 ctamana,n.,подвал,"basement, cellar",
 cve,n.,шерсть,wool,
-cveva,"n., v.","стрижка, стричь",to cut wool,
-eka,"n., v.","давание, давать","act of giving, to give",
-ekli,"n., v.","прогулка, гулять","(to) walk, (to) stroll",
+cveva,nv.,"стрижка, стричь",to cut wool,
+eka,nv.,"давание, давать","act of giving, to give",
+ekli,nv.,"прогулка, гулять","(to) walk, (to) stroll",
 ele,prep.,"к, до","to, up to",
 emoli,n.,земля,"earth, ground",1
 emuj,adj.,самый,most,
@@ -180,7 +180,7 @@ eso,n.,"предел, край",county,
 ezno,n.,тыква,pumpkin,
 ezoncej,adj.,тыквенный,made from pumpkin,
 ezonej,adj.,оранжевый (цвета тыквы),orange (color),
-jagoba,"n., v.","болезнь, болеть","sickness, to be sick",
+jagoba,nv.,"болезнь, болеть","sickness, to be sick",
 jalon,n.,конь,horse,
 jalu,n.,кони,horses,
 kacvevlej,ptcp.,остриженный,with cut wool,3
@@ -191,7 +191,7 @@ qetomoj,ptcp.,поедающий,one who is eating,2
 cmamapam,adv.,"иногда, временами","sometimes, from time to time",
 tecampam,adv.,"всегда, постоянно, очень часто","always, frequently",
 taloni,adv.,завтра,tomorrow,
-cninaj,adv.,сегодня,today,
+lamioj,adv.,сегодня,today,
 miom,adv.,сейчас,now,
 ginem,adv.,скоро,soon,
 piktam,adv.,вчера,yesterday,
@@ -234,10 +234,88 @@ masoj,n.,молоток,hammer,
 cmola,n.,книга,book (large written document),
 vanapka,n.,"место для готовки, кухня, “готовинка”","place of cooking, kitchen, cookery",2
 matopka,n.,"место обучения, школа, университет","place of learning, school",2
-dorudu,"n., v.","раскопки, копать","digging, to dig",2
+dorudu,nv.,"раскопки, копать","digging, to dig",2
 dorudupka,n.,"шахта, рудник, “копаленка”","mine, mining facility",4
 nomumu,n.,"азбука, алфавит",alphabet,2
 dnalu,n.,"воин, солдат","warrior, soldier",
 dnalumu,n.,"армия, вооруженный отряд",army,3
 emja,n.,"плод (растения), фрукт, овощ",fruit,
 cmemja,n.,урожай,"harvest, crop",
+granaki,n.,"посёлок, деревня, поселение","village, settlement",3
+cmolaki,n.,"книжный шкаф, домашняя библиотека","book shelf, home library",3
+graniti,n.,"уменьш. дом, ~домик",,
+granipti,n.,"уменьш. дом, ~домичек",,3
+mjaliti,n.,"уменьш. от кошка, ~кошечка","diminutive of cat, kitty",
+cpodoj,adj.,каменистый,rocky,
+cpodocej,adj.,каменный (сделанный из камня),"made from rock, stone",
+adri,nv.,"осада, осаждать","siege, to siege",
+ago,nv.,"чешуйка, лепесток, шелуха, шелушиться, опадать хлопьями",flake,
+alodru,nv.,"гнев, злость, злиться","anger, to be angry",
+alja,n.,"блок, кирпич","block, brick",
+amipe,nv.,"укрытие, прятать, защищать","hideout, to hide, to protect",1
+mipa,nv.,"тень, закрывать тенью, отбрасывать тень","shadow, to drop shadow",
+amo,nv.,"добавлять, вставлять, приправа, специя","to add, to paste, spice",
+amuka,conj.,потому что,because,1
+muka,nv.,"причина, суть, вызывать, провоцировать","reason, cause, to cause, to provoke",
+anede,nv.,"критика, критиковать","critique, to criticize",1
+nedu,n.,внимание,attention,
+apava,n.,сливочное масло,butter,
+aponi,n.,добро,good,1
+arasa,nv.,"сигара, сигарета, табак, курить","cigar, tobacco, to smoke",
+atu,n.,обувь,footwear,
+avi,nv.,"покой, находиться в покое","calm, to be calm",
+avej,adj.,спокойный,calm,
+babele,n.,"впадина, овраг, долина, каньон","canyon, valley",
+balja,nv.,"жара, нагревать","heat, to heat",
+bakotro,n.,голова,head,
+bemamu,n.,"начальник, наниматель","master, employer",2
+bomukla,nv.,"руины, разрушать","ruin, to destroy",
+itamaj,adj.,"произвольно, свободный",deliberate,
+tamepu,n.,"поверхность, кожа","surface, skin",2
+taloti,nv.,"ответ, отвечать","answer, to answer",2
+keni,nv.,"память, запоминать, библиотека","memory, to memorize, library",
+kimo,n.,пенис,penis,
+traru,,,,
+komime,,,,
+konuli,,,,
+kopigru,n.,"останки, труп",carcass,
+padana,,,,
+peluna,n.,ночь,night,2
+lami,n.,день,day,
+lamej,adj.,,,
+pepala,,,,
+potulo,,,,
+anati,prep.,"напротив, против",against,1
+lupatra,,,,2
+zu,,,,
+ziva,nv.,"украшение (процесс), украшать","beutification, to make beautiful",
+zizejva,nv.,"украшение (процесс), украшать","beutification, to make beautiful",
+lakva,nv.,"готовка супа, готовить суп","making soup, to make soup",
+tavia,nv.,"цепь, последовательность, соединять, выстраивать (в последовательность)",,
+taviajn,n.,тавианизм (религиозное течение),,
+amojn,n.,сциентизм,,
+upa,n.,"секс, Дикий дух (божество)",,
+upajn,n.,упаизм (религиозное течение),,
+tomojn,n.,обжорство,,
+tomojmi,n.,обжора,,
+arasmi,n.,курильщик,,
+pomimi,n.,бегун,,
+panimi,n.,путешественник,,
+ikulmi,n.,"менеджер, управленец",,
+kamato,v.,научить (завершенное действие),,2
+matolen,nv.,самопознание,,
+timato,n.,учебник,,2
+titomulej,ptcp.,"то, что должно быть съедено",,2
+cnuvi,interj.,привет,hello (informal),
+cnuvej,adj.,"определенный, конкретный","specific, definite, particular",
+lamioponi,interj.,здравствуйте (формальное приветствие),hello (formal),5
+porumpa,n.,"офис, кабинет","office, workplace",2
+meloj,adj.,новый,new,
+ajru,adv.,там,there,
+ajo,adv.,здесь,here,
+tmo,nv.,"обед, обедать","dinner, to have dinner",
+antmi,n.,утро,morning,2
+antmioponi,interj.,доброе утро!,good morning!,6
+zu,n.,имя,name,
+kejvmi,n.,врач,doctor,
+lam,n.,час,hour,

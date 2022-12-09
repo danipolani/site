@@ -2,31 +2,57 @@ word,pos,ipa,lat,head_lat,en
 a,prep.,a,a,a,at
 abika,n.,ˈabika,abika,a,"style, approach"
 adi,n.,ˈadi,adi,a,"box, container"
-ale,"n., v.",ˈale,ale,a,"mess, chaotic movement"
+adri,nv.,ˈadri,adri,a,"siege, to siege"
+ago,nv.,ˈago,ago,a,flake
+ale,nv.,ˈale,ale,a,"mess, chaotic movement"
 aligra,prep.,ˈaligra,aligra,a,"among, between"
 almjavo,n.,alˈmʲaʋo,almyavo,a,group dance
+alodru,nv.,ˈalodru,alodru,a,"anger, to be angry"
 alumto,n.,aˈlumto,alumto,a,art
-amano,"n., v.",aˈmano,amano,a,"measurement, evaluation"
+alja,n.,ˈaʎa,alya,a,"block, brick"
+amano,nv.,aˈmano,amano,a,"measurement, evaluation"
+amipe,nv.,aˈmipe,amipe,a,"hideout, to hide, to protect"
+amo,nv.,ˈamo,amo,a,"to add, to paste, spice"
 amoj,n.,ˈamoj,amoy,a,"science, magic"
+amojn,n.,ˈamojn,amoyn,a,
 ampa,n.,ˈampa,ampa,a,time
+amuka,conj.,aˈmuka,amuka,a,because
 ana,prep.,ˈana,ana,a,in front of
+anati,prep.,aˈnati,anati,a,against
+anede,nv.,aˈnede,anede,a,"critique, to criticize"
 animej,adj.,aˈnimej,animey,a,rich
 animi,n.,aˈnimi,animi,a,wealth
 anotro,n.,aˈnotro,anotro,a,"will, intention"
+antmi,n.,anˈtmi,antmi,a,morning
+antmioponi,interj.,antmioˈponi,antmioponi,a,good morning!
 apamaj,adj.,ˈapamaj,apamay,a,long
+apava,n.,ˈapaʋa,apava,a,butter
 apaj,adj.,ˈapaj,apay,a,fast
+aponi,n.,aˈponi,aponi,a,good
+arasa,nv.,ˈarasa,arasa,a,"cigar, tobacco, to smoke"
 araci,n.,aˈraʃi,arashi,a,sky
+arasmi,n.,ˈarasmi,arasmi,a,
 aro,n.,ˈaro,aro,a,"plow, tractor"
 aroj,adj.,ˈaroj,aroy,a,"strong, potent"
 atomume,cvb.,aˈtomume,atomume,a,before eating
 atomumej,adj.,aˈtomumej,atomumey,a,hungry
+atu,n.,ˈatu,atu,a,footwear
+avej,adj.,ˈaʋej,avey,a,calm
+avi,nv.,ˈaʋi,avi,a,"calm, to be calm"
 aja,n.,ˈaja,aya,a,"sea, lake, large body of water"
 ajadoli,n.,ajaˈdoli,ayadoli,a,"sea water soup, traditional dish from Tilanka"
+ajo,adv.,ˈajo,ayo,a,here
+ajru,adv.,ˈajru,ayru,a,there
 azumo,n.,aˈzumo,azumo,a,road
-beka,"n., v.",ˈbeka,beka,b,"start, to begin"
+babele,n.,ˈbabele,babele,b,"canyon, valley"
+bakotro,n.,ˈbakotro,bakotro,b,head
+balja,nv.,ˈbaʎa,balya,b,"heat, to heat"
+beka,nv.,ˈbeka,beka,b,"start, to begin"
+bemamu,n.,beˈmamu,bemamu,b,"master, employer"
 biramo,n.,biˈramo,biramo,b,thunder
 bo,interj.,bo,bo,b,not
 bolom,n.,ˈbolom,bolom,b,spoon
+bomukla,nv.,ˈbomukla,bomukla,b,"ruin, to destroy"
 bre,prep.,bre,bre,b,"away, from"
 bri,,bri,bri,b,"all, everything"
 bu,interj.,bu,bu,b,no
@@ -34,18 +60,18 @@ bup,pron.,bup,bup,b,nobody
 dakapka,n.,ˈdakapka,dakapka,d,"eye, eyes"
 dapkiu,n.,ˈdapkiu,dapkiu,d,two eyes
 dapo,n.,ˈdapo,dapo,d,dog
-dari,"n., v.",ˈdari,dari,d,"look, gaze, to look"
+dari,nv.,ˈdari,dari,d,"look, gaze, to look"
 di,prep.,di,di,d,above
 dinej,adj.,ˈdinej,diney,d,tasty
 dnalu,n.,ˈdnalu,dnalu,d,"warrior, soldier"
 dnalumu,n.,dnaˈlumu,dnalumu,d,army
 doli,n.,ˈdoli,doli,d,water
-dorudu,"n., v.",doˈrudu,dorudu,d,"digging, to dig"
+dorudu,nv.,doˈrudu,dorudu,d,"digging, to dig"
 dorudupka,n.,doruˈdupka,dorudupka,d,"mine, mining facility"
 doj,adj.,doj,doy,d,weak
-dutru,"n., v.",ˈdutru,dutru,d,"moan, to moan"
-eka,"n., v.",ˈeka,eka,e,"act of giving, to give"
-ekli,"n., v.",ˈekli,ekli,e,"(to) walk, (to) stroll"
+dutru,nv.,ˈdutru,dutru,d,"moan, to moan"
+eka,nv.,ˈeka,eka,e,"act of giving, to give"
+ekli,nv.,ˈekli,ekli,e,"(to) walk, (to) stroll"
 ele,prep.,ˈele,ele,e,"to, up to"
 elej,pron.,ˈelej,eley,e,she
 elni,pron.,ˈelni,elni,e,self
@@ -61,26 +87,44 @@ ginem,adv.,ˈginem,ginem,g,soon
 glovi,n.,ˈgloʋi,glovi,g,boy
 gra,prep.,gra,gra,g,through
 grama,n.,ˈgrama,grama,g,"shit, crap"
+granaki,n.,graˈnaki,granaki,g,"village, settlement"
 grani,n.,ˈgrani,grani,g,house
+granipti,n.,graˈnipti,granipti,g,
+graniti,n.,ˈgraniti,graniti,g,
 graveka,,ˈgraʋeka,graveka,g,
 ida,n.,ˈida,ida,i,"hearing, to hear"
-ikulu,"n., v.",ˈikulu,ikulu,i,"control, to control"
+ikulmi,n.,ˈikulmi,ikulmi,i,
+ikulu,nv.,ˈikulu,ikulu,i,"control, to control"
 imira,,ˈimira,imira,i,
 imole,n.,iˈmole,imole,i,"spray, splash"
+itamaj,adj.,ˈitamaj,itamay,i,deliberate
 ivli,n.,ˈiʋli,ivli,i,sheep
 kaluni,v.,ˈkaluni,kaluni,k,to caress (completed action)
+kamato,v.,kaˈmato,kamato,k,
 kacvevlej,ptcp.,kaʃˈʋeʋlej,kashvevley,k,with cut wool
 katomlej,ptcp.,kaˈtomlej,katomley,k,eaten
 katomu,v.,ˈkatomu,katomu,k,to eat (completed action)
 qe,ptcl.,kʼe,ke,k,<subject marker>
 qekacvevaj,ptcp. ,kʼekaˈʃʋeʋaj,kekashvevay,k,one who have cut wool
 qekatomoj,ptcp.,kʼekaˈtomoj,kekatomoy,k,one who ate
+keni,nv.,ˈkeni,keni,k,"memory, to memorize, library"
 qetomoj,ptcp.,kʼeˈtomoj,ketomoy,k,one who is eating
+kejvmi,n.,ˈkejʋmi,keyvmi,k,doctor
 kibrej,adj.,ˈkibrej,kibrey,k,simple
+kimo,n.,ˈkimo,kimo,k,penis
 kitra,n.,ˈkitra,kitra,k,"pants, trousers"
+komime,,ˈkomime,komime,k,
+konuli,,ˈkonuli,konuli,k,
+kopigru,n.,ˈkopigru,kopigru,k,carcass
 kti,prep.,kti,kti,k,for
-kuta,"n., v.",ˈkuta,kuta,k,"sleep, to sleep"
+kuta,nv.,ˈkuta,kuta,k,"sleep, to sleep"
 laka,n.,ˈlaka,laka,l,soup
+lakva,nv.,ˈlakʋa,lakva,l,"making soup, to make soup"
+lam,n.,lam,lam,l,hour
+lamej,adj.,ˈlamej,lamey,l,
+lami,n.,ˈlami,lami,l,day
+lamioponi,interj.,lamioˈponi,lamioponi,l,hello (formal)
+lamioj,adv.,ˈlamioj,lamioy,l,today
 lemu,n.,ˈlemu,lemu,l,language
 leuni,n.,leˈuni,leuni,l,hair
 lej,prep.,lej,ley,l,to
@@ -88,62 +132,69 @@ li,ptcl.,li,li,l,<object marker>
 likvami,n.,likˈʋami,likvami,l,cook (profession)
 lilej,adj.,ˈlilej,liley,l,soft
 lo,pron.,lo,lo,l,that (object pronoun)
-logri,"n., v.",ˈlogri,logri,l,"(to) shiver, (to) tremble"
+logri,nv.,ˈlogri,logri,l,"(to) shiver, (to) tremble"
 loki,n.,ˈloki,loki,l,"human, person"
 loc,pron.,loʃ,losh,l,of that (genetive object pronoun)
 loj,pron.,loj,loy,l,those (object pronoun)
 luma,n.,ˈluma,luma,l,dream (while sleeping)
 lumekli,n.,ˈlumekli,lumekli,l,autumn
-luni,"n., v.",ˈluni,luni,l,"(to) love, (to) caress"
-luninel,"n., v.",ˈluninel,luninel,l,self-love
+luni,nv.,ˈluni,luni,l,"(to) love, (to) caress"
+luninel,nv.,ˈluninel,luninel,l,self-love
+lupatra,,luˈpatra,lupatra,l,
 lja,n.,ʎa,lya,l,speech
 mar,n.,mar,mar,m,fire
-marva,"n., v.",ˈmarʋa,marva,m,"burning, to burn"
+marva,nv.,ˈmarʋa,marva,m,"burning, to burn"
 masoj,n.,ˈmasoj,masoy,m,hammer
-mato,"n., v.",ˈmato,mato,m,"teaching, to teach"
+mato,nv.,ˈmato,mato,m,"teaching, to teach"
+matolen,nv.,ˈmatolen,matolen,m,
 matopka,n.,maˈtopka,matopka,m,"place of learning, school"
 maj,interj.,maj,may,m,yes
 me,prep.,me,me,m,on
 mekoj,adj.,ˈmekoj,mekoy,m,"full, complete"
+meloj,adj.,ˈmeloj,meloy,m,new
 memoj,adj.,ˈmemoj,memoy,m,"fine, sound, providing expected results"
 meva,n.,ˈmeʋa,meva,m,home
 milamo,n.,miˈlamo,milamo,m,trade
-milo,"n., v.",ˈmilo,milo,m,(to) thrive
+milo,nv.,ˈmilo,milo,m,(to) thrive
 mimuca,n.,miˈmuʃa,mimusha,m,barrel
 mineno,n.,ˈmineno,mineno,m,"porridge, cereal"
 miom,adv.,ˈmiom,miom,m,now
+mipa,nv.,ˈmipa,mipa,m,"shadow, to drop shadow"
 miramba,n.,miˈramba,miramba,m,document
 mirina,n.,miˈrina,mirina,m,wind
-mivula,"n., v.",ˈmiʋula,mivula,m,defecation 
-momebra,"n., v.",moˈmebra,momebra,m,"effort, to make an effort"
+mivula,nv.,ˈmiʋula,mivula,m,defecation 
+momebra,nv.,moˈmebra,momebra,m,"effort, to make an effort"
 momej,n.,ˈmomej,momey,m,heart
 momi,n.,ˈmomi,momi,m,"center, middle"
 mopi,n.,ˈmopi,mopi,m,spring (season)
+muka,nv.,ˈmuka,muka,m,"reason, cause, to cause, to provoke"
 mumo,n.,ˈmumo,mumo,m,sun
 mja,interj.,mʲa,mya,m,yes
-mjaki,"n., v.",ˈmʲaki,myaki,m,
+mjaki,nv.,ˈmʲaki,myaki,m,
 mjali,n.,ˈmʲali,myali,m,cat
-mjavo,"n., v.",ˈmʲaʋo,myavo,m,"(to) spin, to rotate"
-nami,"n., v.",ˈnami,nami,n,"goal, confidence, to be confident"
+mjaliti,n.,ˈmʲaliti,myaliti,m,"diminutive of cat, kitty"
+mjavo,nv.,ˈmʲaʋo,myavo,m,"(to) spin, to rotate"
+nami,nv.,ˈnami,nami,n,"goal, confidence, to be confident"
 naj,n.,naj,nay,n,"leaf, foliage"
 najdeli,n.,najˈdeli,naydeli,n,water lily
+nedu,n.,ˈnedu,nedu,n,attention
 neme,prep.,ˈneme,neme,n,under
 nerabra,,ˈnerabra,nerabra,n,
 nevi,n.,ˈneʋi,nevi,n,girl
 nej,conj.,nej,ney,n,and
 nej,prep.,nej,ney,n,after (following)
 ni,pron.,ni,ni,n,"I, me"
-niqegra,"n., v.",niˈkʼegra,nikegra,n,(to) kiss
+niqegra,nv.,niˈkʼegra,nikegra,n,(to) kiss
 nilekla,,ˈnilekla,nilekla,n,
-niluni,"n., v.",niˈluni,niluni,n,"self-love, self-caress"
-nimato,"n., v.",niˈmato,nimato,n,"learning, to learn"
+niluni,nv.,niˈluni,niluni,n,"self-love, self-caress"
+nimato,nv.,niˈmato,nimato,n,"learning, to learn"
 nimeva,v.,niˈmeʋa,nimeva,n,to be at home
 nimej,adj.,ˈnimej,nimey,n,profitable
 nimu,n.,ˈnimu,nimu,n,money
 nimujm,adv.,ˈnimujm,nimuym,n,later
-nitimi,"n., v.",niˈtimi,nitimi,n,"delight, to admire"
+nitimi,nv.,niˈtimi,nitimi,n,"delight, to admire"
 no,n.,no,no,n,"letter, character"
-nokadma,"n., v.",noˈkadma,nokadma,n,(to) fall
+nokadma,nv.,noˈkadma,nokadma,n,(to) fall
 nokidu,,ˈnokidu,nokidu,n,
 nomumu,n.,noˈmumu,nomumu,n,alphabet
 notro,n.,ˈnotro,notro,n,"model, image"
@@ -158,11 +209,15 @@ olimoj,adj.,ˈolimoj,olimoy,o,happy
 op,n.,op,op,o,word
 oro,pron.,ˈoro,oro,o,"what, how"
 oru,pron.,ˈoru,oru,o,"what, how (to habitual actions)"
+padana,,ˈpadana,padana,p,
 pali,n.,ˈpali,pali,p,rain
 paligre,n.,ˈpaligre,paligre,p,
-pani,"n., v.",ˈpani,pani,p,"movement, (to) walk, path"
+pani,nv.,ˈpani,pani,p,"movement, (to) walk, path"
+panimi,n.,ˈpanimi,panimi,p,
 pek,prep.,pek,pek,p,"using, by, with"
+peluna,n.,peˈluna,peluna,p,night
 pep,n.,pep,pep,p,father
+pepala,,ˈpepala,pepala,p,
 pi,prep.,pi,pi,p,behind
 pikabro,n.,ˈpikabro,pikabro,p,paradox
 pikotru,n.,ˈpikotru,pikotru,p,circulation
@@ -173,14 +228,17 @@ pla,pron.,pla,pla,p,"he, she, it"
 plac,pron.,plaʃ,plash,p,"of him, her, it (3rd person object)"
 pliq,pron.,plikʼ,plik,p,"by him, her, it (3rd person subject)"
 plu,pron.,plu,plu,p,them
-pomi,"n., v.",ˈpomi,pomi,p,(to) run
+pomi,nv.,ˈpomi,pomi,p,(to) run
+pomimi,n.,ˈpomimi,pomimi,p,
 ponej,adj.,ˈponej,poney,p,"good, kind, friendly"
 ponipi,n.,poˈnipi,ponipi,p,friend
 pop,prep.,pop,pop,p,for
+porumpa,n.,poˈrumpa,porumpa,p,"office, workplace"
+potulo,,ˈpotulo,potulo,p,
 ratri,n.,ˈratri,ratri,r,"roof, housetop"
 re,n.,re,re,r,field
 roa,pron.,ˈroa,roa,r,that
-rumpa,"n., v.",ˈrumpa,rumpa,r,(to) work
+rumpa,nv.,ˈrumpa,rumpa,r,(to) work
 ruj,pron.,ruj,ruy,r,those
 sel,n.,sel,sel,s,cold
 selej,adj.,ˈselej,seley,s,cold
@@ -193,51 +251,71 @@ cmemja,n.,ˈʃmemʲa,shmemya,s,"harvest, crop"
 cmisotru,n.,ʃmˈisotru,shmisotru,s,knife
 cmobumu,n.,ʃmoˈbumu,shmobumu,s,formula
 cmola,n.,ˈʃmola,shmola,s,book (large written document)
+cmolaki,n.,ʃmoˈlaki,shmolaki,s,"book shelf, home library"
 cmjapki,n.,ˈʃmʲapki,shmyapki,s,snot
-cninaj,adv.,ˈʃninaj,shninay,s,today
-cnuvi,"n., v.",ˈʃnuʋi,shnuvi,s,"finding, discovery, to find, to discover"
+cnuvej,adj.,ˈʃnuʋej,shnuvey,s,"specific, definite, particular"
+cnuvi,interj.,ˈʃnuʋi,shnuvi,s,hello (informal)
+cnuvi,nv.,ˈʃnuʋi,shnuvi,s,"finding, discovery, to find, to discover"
 cnujm,adj.,ʃnujm,shnuym,s,"every, any"
 coc,prep.,ʃoʃ,shosh,s,of
 cpodo,n.,ˈʃpodo,shpodo,s,"stone, rock"
+cpodocej,adj.,ˈʃpodoʃej,shpodoshey,s,"made from rock, stone"
+cpodoj,adj.,ˈʃpodoj,shpodoy,s,rocky
 cpoj,n.,ʃpoj,shpoy,s,door
 crakepke,cvb.,ˈʃrakepke,shrakepke,s,as the result of unexpected encirclement
-crakli,"n., v.",ˈʃrakli,shrakli,s,"unexpected appearance, to appear suddenly, to encircle"
-cruni,"n., v.",ˈʃruni,shruni,s,(to) smile
+crakli,nv.,ˈʃrakli,shrakli,s,"unexpected appearance, to appear suddenly, to encircle"
+cruni,nv.,ˈʃruni,shruni,s,(to) smile
 ctamana,n.,ˈʃtamana,shtamana,s,"basement, cellar"
 cve,n.,ʃʋe,shve,s,wool
-cveva,"n., v.",ˈʃʋeʋa,shveva,s,to cut wool
+cveva,nv.,ˈʃʋeʋa,shveva,s,to cut wool
 sme,n.,sme,sme,s,color
 sopo,n.,ˈsopo,sopo,s,arm
 su,prep.,su,su,s,"in, inside"
 taloni,adv.,ˈtaloni,taloni,t,tomorrow
+taloti,nv.,taˈloti,taloti,t,"answer, to answer"
+tamepu,n.,taˈmepu,tamepu,t,"surface, skin"
+tavia,nv.,ˈtaʋia,tavia,t,
+taviajn,n.,ˈtaʋiajn,taviayn,t,
 teloko,n.,teˈloko,teloko,t,"people, community"
 tec,prep.,teʃ,tesh,t,of
 tecampam,adv.,ˈteʃampam,teshampam,t,"always, frequently"
-xama,pron.,ˈtɬama,tlama,t,when
+timato,n.,tiˈmato,timato,t,
+titomulej,ptcp.,tiˈtomulej,titomuley,t,
+xampa,pron.,ˈtɬampa,tlampa,t,when
 xap,pron.,tɬap,tlap,t,"by who, with whom"
 xo,pron.,tɬo,tlo,t,"who, what"
 xok,pron.,tɬok,tlok,t,"by what, with what"
 xoc,pron.,tɬoʃ,tlosh,t,"whose, whats, of-what"
-tomu,"n., v.",ˈtomu,tomu,t,"eating, to eat"
+tmo,nv.,tmo,tmo,t,"dinner, to have dinner"
+tomojmi,n.,ˈtomojmi,tomoymi,t,
+tomojn,n.,ˈtomojn,tomoyn,t,
+tomu,nv.,ˈtomu,tomu,t,"eating, to eat"
 tomulej,ptcp.,ˈtomulej,tomuley,t,being eaten
 tomupke,cvb.,ˈtomupke,tomupke,t,as the result of eating
 tomucme,cvb.,ˈtomuʃme,tomushme,t,in order to eat
 tra,prep.,tra,tra,t,"as, like, alike"
+traru,,ˈtraru,traru,t,
 u,pron.,u,u,u,"these, the"
 ulvi,n.,ˈulʋi,ulvi,u,"hand, star"
-vana,"n., v.",ˈʋana,vana,v,"cooking, to cook"
+upa,n.,ˈupa,upa,u,
+upajn,n.,ˈupajn,upayn,u,
+vana,nv.,ˈʋana,vana,v,"cooking, to cook"
 vanapka,n.,ʋaˈnapka,vanapka,v,"place of cooking, kitchen, cookery"
-ve,"n., v.",ʋe,ve,v,"talk, to talk"
+ve,nv.,ʋe,ve,v,"talk, to talk"
 vi,conj.,ʋi,vi,v,and
 vikej,adj.,ˈʋikej,vikey,v,"unique, rare, original"
 viki,n.,ˈʋiki,viki,v,"uniqueness, originality"
 vitome,cvb.,ʋiˈtome,vitome,v,while eating
-jagoba,"n., v.",ˈjagoba,yagoba,y,"sickness, to be sick"
+jagoba,nv.,ˈjagoba,yagoba,y,"sickness, to be sick"
 jalon,n.,ˈjalon,yalon,y,horse
 jalu,n.,ˈjalu,yalu,y,horses
 jej,prep.,jej,yey,y,out of
 jup,pron.,jup,yup,y,you
-zavi,"n., v.",ˈzaʋi,zavi,z,"wish, to want"
+zavi,nv.,ˈzaʋi,zavi,z,"wish, to want"
+ziva,nv.,ˈziʋa,ziva,z,"beutification, to make beautiful"
 zizej,adj.,ˈzizej,zizey,z,"beautiful, nice"
+zizejva,nv.,ˈzizejʋa,zizeyva,z,"beutification, to make beautiful"
 zizi,n.,ˈzizi,zizi,z,beauty
-zume,"n., v.",ˈzume,zume,z,"to carry, to bring"
+zu,n.,zu,zu,z,name
+zu,,zu,zu,z,
+zume,nv.,ˈzume,zume,z,"to carry, to bring"
