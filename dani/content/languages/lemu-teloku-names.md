@@ -71,3 +71,4 @@ draft: true
 {{< lt/dc w="jari" c=1 >}}
 {{< lt/dc w="kukoku" c=1 s=2 >}}
 {{< lt/dc w="kaxa" c=1 >}}
+{{< lt/dc w="katten" c=1 >}}
