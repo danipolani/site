@@ -5,7 +5,7 @@ isoCode = "en"
 weight = 2
 rtl = false
 
-title = "Dani Poloni"
+title = "Dani Polani"
 # logo = "img/logo.png"
 description = "Books, worldbuilding and stuff"
 # copyright = "Copy, _right?_ :thinking_face:"
@@ -13,12 +13,13 @@ description = "Books, worldbuilding and stuff"
 dateFormat = "2 January 2006"
 
 [author]
-  name = "Dani Poloni"
+  name = "Dani Polani"
   image = "img/l23.png"
   headline = "Books, worldbuilding and stuff"
   bio = "Rather smol and kinda friendly animal"
   links = [
-    { twitter = "https://twitter.com/danipolony" },
-    { mastodon = "https://mastodon.ml/@danipoloni" },
-    { github = "https://github.com/danipoloni" },
+    { telegram = "https://t.me/dani_tales" },
+    { twitter = "https://twitter.com/danipolani" },
+    { mastodon = "https://mastodon.social/@DaniPolani" },
+    { github = "https://github.com/danipolani" },
   ]

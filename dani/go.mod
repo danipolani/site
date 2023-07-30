@@ -1,4 +1,4 @@
-module github.com/danipoloni/dani
+module github.com/danipolani/dani
 
 go 1.16
 

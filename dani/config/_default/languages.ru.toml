@@ -5,7 +5,7 @@ isoCode = "ru"
 weight = 1
 rtl = false
 
-title = "Дани Полони"
+title = "Дани Полани"
 # logo = "img/logo.png"
 description = "Книжки, ворлдбилдинг и всякое"
 # copyright = "Copy, _right?_ :thinking_face:"
@@ -13,12 +13,13 @@ description = "Книжки, ворлдбилдинг и всякое"
 dateFormat = "2 January 2006"
 
 [author]
-  name = "Дани Полони"
+  name = "Дани Полани"
   image = "img/l23.png"
   headline = "Книжки, ворлдбилдинг и всякое"
   bio = "Некрупное и довольно доброе животное"
   links = [
-    { twitter = "https://twitter.com/danipolony" },
-    { mastodon = "https://mastodon.ml/@danipoloni" },
-    { github = "https://github.com/danipoloni" },
+    { telegram = "https://t.me/dani_tales" },
+    { twitter = "https://twitter.com/danipolani" },
+    { mastodon = "https://mastodon.social/@DaniPolani" },
+    { github = "https://github.com/danipolani" },
   ]

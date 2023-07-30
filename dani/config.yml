@@ -1,6 +1,6 @@
-baseURL: https://danipoloni.github.io/
+baseURL: https://danipolani.github.io/
 defaultContentLanguage: ru
-title: 'Dani Poloni'
+title: 'Dani Polani'
 paginate: 8
 module:
   imports:
@@ -28,8 +28,8 @@ languages:
         languageName: ":ru:"
         languageAltTitle: Русский
         weight: 1
-        title: 'Дани Полони'
-        author: 'Дани Полони'
+        title: 'Дани Полани'
+        author: 'Дани Полани'
         taxonomies:
           category: categories
           tag: tags
@@ -39,8 +39,8 @@ languages:
         languageName: ":uk:"
         languageAltTitle: English
         weight: 2
-        title: Dani Poloni
-        author: Dani Poloni
+        title: Dani Polani
+        author: Dani Polani
         # taxonomies:
         #   category: FRcategories
         #   tag: FRtags
@@ -74,7 +74,7 @@ languages:
 
 params:
     env: production # to enable google analytics, opengraph, twitter-cards and schema.
-    description: "Dani Poloni - Worldbuilding and stuff"
+    description: "Dani Polani - Worldbuilding and stuff"
     params:
     mainSections:
       - books
@@ -96,7 +96,7 @@ params:
 
     profileMode:
         enabled: false
-        title: Dani Poloni
+        title: Dani Polani
         imageUrl: "https://raw.githubusercontent.com/twitter/twemoji/master/assets/svg/1f317.svg"
         # imageTitle: my image
         # imageWidth: 120
@@ -113,9 +113,9 @@ params:
             Welcome and behold.
     socialIcons:
         - name: twitter
-          url: "https://twitter.com/danipolony"
+          url: "https://twitter.com/danipolani"
         - name: github
-          url: "https://github.com/danipoloni"
+          url: "https://github.com/danipolani"
 
 outputs:
     home:
