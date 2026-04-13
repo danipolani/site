@@ -1,4 +1,4 @@
-{{- /* Рамка: border = настраиваемая ширина; фон body = base — поля у узкого wrapper не заливаются цветом рамки. Скругление — у #wrapper. */ -}}
+{{- /* Рамка: body = полоса цвета highlight (padding = frameWidth); .site-frame-panel = полный прямоугольник с base и внутренним скруглением (в углах виден highlight). */ -}}
 {{- $r := .Site.Params.frameBorderRadius | default "0px" -}}
 {{- $fw := .Site.Params.frameWidth | default "18px" -}}
 {{- if eq .Site.Params.addFrame true -}}
@@ -7,27 +7,32 @@
     --frame-border-radius: {{ $r }};
     --frame-width: {{ $fw }};
   }
+  html {
+    background-color: var(--highlight-color);
+  }
   body.frame {
-    border: var(--frame-width) solid var(--highlight-color) !important;
+    border: none !important;
     border-radius: 0 !important;
-    background-color: var(--base-color) !important;
-    padding: 20px !important;
+    margin: 0;
+    background-color: var(--highlight-color) !important;
+    padding: var(--frame-width) !important;
     box-sizing: border-box;
+    min-height: 100vh;
   }
-  @media (min-width: 767px) {
-    body.frame {
-      padding: 50px !important;
-    }
-  }
-  body.frame #wrapper.wrapper {
+  body.frame .site-frame-panel {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    box-sizing: border-box;
     border-radius: var(--frame-border-radius);
     background-color: var(--base-color);
-    box-sizing: border-box;
-    min-height: calc(100vh - 2 * var(--frame-width) - 40px);
+    padding: 20px;
+    min-height: calc(100vh - 2 * var(--frame-width));
+    overflow: hidden;
   }
   @media (min-width: 767px) {
-    body.frame #wrapper.wrapper {
-      min-height: calc(100vh - 2 * var(--frame-width) - 100px);
+    body.frame .site-frame-panel {
+      padding: 50px;
     }
   }
 </style>

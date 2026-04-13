@@ -27,9 +27,15 @@ links:
 
 Метафорическая сказка о том, как Кот и девочка по имени Вишенка (её имя само назвало себя) плывут по реке, над которой всегда стоит осень. 
 
-# Купить
+# Почитать
 
-Пока сказочка в ожидании иллюстраций и готовится к публикации. 
+[Ridero](https://ridero.ru/books/pokhod_vishenki_i_kota_ot_zimy_k_vesne_na_plotu/)
+[Amazon](http://amazon.com/dp/B0CGXK86T1)
+[LitRes](http://litres.ru/book/dani-polani/pohod-vishenki-i-kota-ot-zimy-k-vesne-na-plotu-69585784/?lfrom=230737948)
+[Ozon](https://ozon.ru/context/detail/id/1166764963/)
+[WB Digital](https://digital.wildberries.ru/offer/151701)
+[Wildberries](https://wildberries.ru/catalog/175481882/detail.aspx)
+[Goodreads](https://www.goodreads.com/book/show/198243833)
 
 # Метаистория
 

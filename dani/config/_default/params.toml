@@ -11,9 +11,9 @@ limitPostsOnHomepage = 8
 sortPostsByDateOldestFirst = false
 addDot = true
 addFrame = true
-# Толщина цветной рамки (как border у body.frame)
+# Толщина полосы рамки (padding у body; цвет — highlightColor)
 frameWidth = "18px"
-# Скругление только у внутреннего края (у #wrapper), внешний край рамки прямой
+# Скругление внутренней панели .site-frame-panel; снаружи угол экрана прямой
 frameBorderRadius = "40px"
 # highlightColor = '#7b16ff'
 highlightColor = '#111111'

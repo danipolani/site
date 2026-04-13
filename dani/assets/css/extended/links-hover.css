@@ -1,0 +1,53 @@
+/* Hover у ссылок: цвет dotColor вместо подчёркивания, лёгкий transition */
+a {
+  transition: color 0.15s ease-out;
+}
+
+a:hover {
+  color: var(--dot-color);
+  text-decoration: none;
+}
+
+/* Колонки главной и виджеты задают underline с большей специфичностью */
+.home-newspaper__column a:hover,
+.home-widget-item__title a:hover,
+.home-widget-item__links a:hover {
+  color: var(--dot-color);
+  text-decoration: none;
+}
+
+.home-newspaper__social-icons a {
+  transition: color 0.22s ease-out, opacity 0.22s ease-out;
+}
+
+.home-newspaper__social-icons a:hover {
+  color: var(--dot-color);
+}
+
+/* Десктопное меню (специфичность темы выше глобального a:hover) */
+.menu-main a:hover {
+  color: var(--dot-color);
+  text-decoration: none;
+}
+
+/* Переключатель языков */
+.lang-switch__link:hover {
+  color: var(--dot-color);
+  opacity: 1;
+}
+
+/* Мобильное меню: на фоне highlight — зелёный акцент вместо opacity */
+.menu-main-mobile ul li a {
+  transition: color 0.22s ease-out;
+}
+
+.menu-main-mobile ul li a:hover {
+  color: var(--dot-color);
+  opacity: 1;
+}
+
+/* Пагинация: оставляем светлый текст на заливке */
+ul.pagination li:hover a,
+ul.pagination li.pagination-item-current a {
+  color: #fff;
+}
