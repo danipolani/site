@@ -1,8 +1,6 @@
 ---
-title: Home
+title: Caveat Emptor
 ---
-
-# Hey there, welcome and behold 👋
 
 → [Books](./books)
 → [Poems](./poems)

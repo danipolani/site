@@ -1,0 +1,34 @@
+{
+  "links": [
+    {
+      "name": "Twitter",
+      "url": "https://x.com/danipolani",
+      "image": "images/social/twitter.svg"
+    },
+    {
+      "name": "Mastodon",
+      "url": "https://mastodon.social/@DaniPolani",
+      "image": "images/social/mastodon.svg"
+    },
+    {
+      "name": "Bluesky",
+      "url": "https://bsky.app/profile/danipolani.bsky.social",
+      "image": "images/social/bluesky.svg"
+    },
+    {
+      "name": "YouTube",
+      "url": "https://www.youtube.com/@apinu_atelier",
+      "image": "images/social/youtube.svg"
+    },
+    {
+      "name": "Reddit",
+      "url": "https://www.reddit.com/user/DaniPolani",
+      "image": "images/social/reddit.svg"
+    },
+    {
+      "name": "Telegram",
+      "url": "https://t.me/dani_tales",
+      "image": "images/social/telegram.svg"
+    }
+  ]
+}
