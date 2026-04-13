@@ -16,3 +16,6 @@
 
 .ipynb_checkpoints
 .~lock.vocabulary-source.csv#
+
+# Hugo output (деплой через GitHub Actions, не коммитим)
+dani/public/

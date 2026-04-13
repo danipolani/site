@@ -26,11 +26,6 @@
  weight = 20
 
 [[main]]
- name = "Языки"
- pageRef = "languages"
- weight = 21
-
-[[main]]
  name = "Блог"
  pageRef = "blog"
  weight = 25
@@ -59,11 +54,6 @@
  name = "Стихи"
  pageRef = "poems"
  weight = 20
-
-[[footer]]
- name = "Языки"
- pageRef = "languages"
- weight = 21
 
 [[footer]]
  name = "Блог"

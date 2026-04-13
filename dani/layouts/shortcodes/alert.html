@@ -1,0 +1,3 @@
+<aside class="content-alert"{{ with .Get 0 }} data-alert-type="{{ . }}"{{ end }} style="border-left: 4px solid #7b16ff; padding: 1rem 1rem 1rem 1.25rem; margin: 1rem 0; background: #eaeaea;">
+  {{ .Inner | markdownify }}
+</aside>

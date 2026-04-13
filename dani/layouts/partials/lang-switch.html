@@ -1,0 +1,25 @@
+{{ if gt (len site.Languages) 1 }}
+<nav class="lang-switch" aria-label="Выбор языка">
+  {{ $page := . }}
+  {{ $first := true }}
+  {{ range site.Languages }}
+    {{ $lang := .Lang }}
+    {{ if not $first }}<span class="lang-switch__sep" aria-hidden="true">·</span>{{ end }}
+    {{ $first = false }}
+    {{ $href := "" }}
+    {{ range $page.AllTranslations }}
+      {{ if eq .Lang $lang }}{{ $href = .RelPermalink }}{{ end }}
+    {{ end }}
+    {{ if not $href }}
+      {{ range $page.Site.Home.AllTranslations }}
+        {{ if eq .Lang $lang }}{{ $href = .RelPermalink }}{{ end }}
+      {{ end }}
+    {{ end }}
+    {{ if not $href }}{{ $href = "/" }}{{ end }}
+    <a href="{{ $href }}"
+       class="lang-switch__link{{ if eq $lang $page.Lang }} lang-switch__link--active{{ end }}"
+       hreflang="{{ $lang }}"
+       {{ if eq $lang $page.Lang }}aria-current="true"{{ end }}>{{ $lang | upper }}</a>
+  {{ end }}
+</nav>
+{{ end }}

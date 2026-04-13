@@ -1,12 +1,15 @@
+HUGO_DIR := .
+
+# Локальный предпросмотр
 run:
 	hugo server -D
 
-publish:
-	hugo
-	cd public && git add . &&  git status && git commit -m "regenerated site" && git push origin main
+# Сборка в ./public (каталог в .gitignore родительского репозитория — не коммитится)
+build:
+	hugo --gc
 
-voc:
-	cd scripts && pipenv run python generate_voc.py
-
-jup:
-	cd scripts && pipenv run jupyter notebook
+# Публикация на GitHub Pages: запушьте этот репозиторий в main —
+# сработает .github/workflows/deploy-pages.yml (нужен секрет GH_PAGES_TOKEN).
+# Ручной push в danipolani.github.io больше не требуется.
+publish: build
+	@echo "Готово: каталог public/. Залейте изменения в main — деплой через Actions."

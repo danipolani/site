@@ -1,0 +1,46 @@
+# Сборка Hugo в dani/ и выкладка в danipolani.github.io.
+# Секрет GH_PAGES_TOKEN: GitHub → репозиторий с ИСХОДНИКАМИ → Settings → Secrets → Actions.
+# Создать PAT (classic: scope repo) или fine-grained с Contents: write на danipolani/danipolani.github.io.
+name: Deploy Hugo site
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "dani/**"
+      - ".github/workflows/deploy-pages.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: hugo-pages-deploy
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: "0.151.0"
+          extended: true
+
+      - name: Build
+        working-directory: dani
+        run: hugo --minify --gc
+
+      - name: Push to GitHub Pages repo
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          personal_token: ${{ secrets.GH_PAGES_TOKEN }}
+          external_repository: danipolani/danipolani.github.io
+          publish_branch: main
+          publish_dir: ./dani/public
+          user_name: github-actions[bot]
+          user_email: github-actions[bot]@users.noreply.github.com
+          commit_message: "Deploy ${{ github.sha }}"
