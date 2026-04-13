@@ -2,7 +2,7 @@
 # https://github.com/zerostaticthemes/hugo-winston-theme
 
 twitter_handle = ""
-showAuthorOnHomepage = true
+showAuthorOnHomepage = false
 showAuthorOnPosts = true
 showIntroContentOnHomepage = true
 showPostsOnHomepage = false
@@ -11,14 +11,19 @@ limitPostsOnHomepage = 8
 sortPostsByDateOldestFirst = false
 addDot = true
 addFrame = true
-highlightColor = '#7b16ff'
-baseColor = "#ffffff"
+# Толщина цветной рамки (как border у body.frame)
+frameWidth = "18px"
+# Скругление только у внутреннего края (у #wrapper), внешний край рамки прямой
+frameBorderRadius = "40px"
+# highlightColor = '#7b16ff'
+highlightColor = '#111111'
+baseColor = "#F5F5F5"
 baseOffsetColor = "#eaeaea"
 headingColor = "#1c1b1d"
 textColor = "#4e5157"
-dotColor = "#7b16ff"
+dotColor = "#4CB51C"
 enableGoogleFonts = true
-googleFontsUrl = "https://fonts.googleapis.com/css2?family=Wix+Madefor+Text:wght@400;500;600;700&display=swap"
-fontFamilyHeading = "'Wix Madefor Text', sans-serif"
-fontFamilyParagraph = "'Wix Madefor Text', sans-serif"
+googleFontsUrl = "https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Google+Sans:wght@400;500;600;700&display=swap"
+fontFamilyHeading = "'Dela Gothic One', sans-serif"
+fontFamilyParagraph = "'Google Sans', sans-serif"
 fontFamilyMonospace = "monospace"

@@ -1,13 +1,13 @@
 :root {
-  --font-family-heading: 'Wix Madefor Text', sans-serif;
-  --font-family-paragraph: 'Wix Madefor Text', sans-serif;
+  --font-family-heading: 'Dela Gothic One', sans-serif;
+  --font-family-paragraph: 'Google Sans', sans-serif;
   --font-family-monospace: monospace;
-  --base-color: #ffffff;
+  --base-color: #F5F5F5;
   --base-offset-color: #eaeaea;
-  --highlight-color: #7b16ff;
+  --highlight-color: #111111;
   --heading-color: #1c1b1d;
   --text-color: #4e5157;
-  --dot-color: #7b16ff; }
+  --dot-color: #4CB51C; }
 
 body, html {
   margin: 0;

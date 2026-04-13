@@ -43,6 +43,8 @@ params:
     - books
     - poems
     - blog
+    - projects
+    - worldbuilding
   google_analytics_id: "G-7542L7M944"
   showAuthorOnHomepage: false
   showAuthorOnPosts: false

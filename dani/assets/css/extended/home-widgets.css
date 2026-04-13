@@ -1,0 +1,98 @@
+/*
+  Карточки виджетов главной — правки: dani/assets/css/extended/home-widgets.css
+  Ритм секций задаётся в home-newspaper.css (--home-section-gap)
+*/
+
+.home-widgets:not(.home-widgets--in-column) {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: var(--home-rule, 4px solid var(--highlight-color));
+}
+
+.home-newspaper__column .home-widgets--in-column {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+/* Между записями внутри секции — чуть плотнее, чем между секциями */
+.home-widget__list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--home-item-gap, 1.1rem);
+}
+
+.home-widget-item {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: transparent;
+  box-shadow: none;
+}
+
+.home-widget-item__media {
+  display: block;
+  margin: 0 0 0.5rem;
+  overflow: hidden;
+}
+
+.home-widget-item__media img {
+  width: 100%;
+  height: auto;
+  display: block;
+  vertical-align: middle;
+}
+
+/* Название записи — тот же шрифт, что тело (Google Sans), не заголовочный Dela */
+.home-widget-item__title {
+  margin: 0 0 0.35rem;
+  font-family: var(--font-family-paragraph);
+  font-size: 1.0625rem;
+  font-weight: 600;
+  line-height: 1.35;
+  text-transform: none;
+  font-variant: normal;
+  letter-spacing: 0.01em;
+  color: var(--heading-color);
+}
+
+.home-widget-item__title a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.home-widget-item__title a:hover {
+  color: var(--highlight-color);
+  text-decoration: underline;
+}
+
+/* Описание — вторичный текст (как подзаголовки в референсе резюме) */
+.home-widget-item__summary {
+  margin: 0 0 0.45rem;
+  font-family: var(--font-family-paragraph);
+  font-size: 0.9375rem;
+  line-height: 1.55;
+  color: var(--text-color);
+  opacity: 0.88;
+}
+
+.home-widget-item__links {
+  margin: 0.15rem 0 0;
+  padding-left: 1.1rem;
+  font-family: var(--font-family-paragraph);
+  font-size: 0.9375rem;
+  line-height: 1.55;
+  list-style: disc;
+}
+
+.home-widget-item__links li {
+  margin: 0.12rem 0;
+}
+
+.home-widget-item__links a {
+  color: var(--highlight-color);
+}
+
+.home-widget-item__links a:hover {
+  text-decoration: underline;
+}

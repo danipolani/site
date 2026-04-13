@@ -1,0 +1,104 @@
+{{ define "body_classes" }}page-home{{ end }}
+
+{{ define "main" }}
+  <div class="home-newspaper">
+    <header class="home-newspaper__masthead">
+      <div class="home-newspaper__masthead-line" aria-hidden="true"></div>
+      <div class="home-newspaper__masthead-inner">
+        <div class="home-newspaper__masthead-text">
+          <h1 class="home-newspaper__title">{{ .Title }}{{ if .Site.Params.addDot }}<span class="dot">.</span>{{ end }}</h1>
+          {{ with .Params.home_subtitle }}
+            <p class="home-newspaper__subtitle">{{ . }}</p>
+          {{ end }}
+        </div>
+        <div class="home-newspaper__masthead-art">
+          <img class="home-newspaper__masthead-art-img" src="{{ "images/logo.svg" | relURL }}" width="140" height="140" alt="" decoding="async" />
+        </div>
+      </div>
+    </header>
+
+    {{ $left := .Params.newspaper_left }}
+    {{ $right := .Params.newspaper_right }}
+    {{ $wl := .Params.home_widgets_left }}
+    {{ $wr := .Params.home_widgets_right }}
+    {{ $wlegacy := .Params.home_widgets }}
+    {{ if or $left $right $wl $wr .Params.home_description }}
+      <div class="home-newspaper__grid">
+        <div class="home-newspaper__column home-newspaper__column--left">
+          {{ with .Params.home_description }}
+            <section class="home-newspaper__panel home-newspaper__panel--description">
+              {{ with $.Params.home_description_heading }}
+                <h2 class="home-newspaper__panel-title">{{ . }}</h2>
+              {{ end }}
+              <div class="home-newspaper__description-inner content">
+                {{ $.RenderString . }}
+              </div>
+            </section>
+          {{ end }}
+          {{ partial "home-social.html" . }}
+          {{ with $left }}
+            <section class="home-newspaper__panel home-newspaper__panel--markdown">
+              {{ $.RenderString . }}
+            </section>
+          {{ end }}
+          {{ with $wl }}
+            <div class="home-widgets home-widgets--in-column">
+              {{ range . }}{{ partial "home-widget-section.html" (dict "Site" $.Site "Home" $ "Block" .) }}{{ end }}
+            </div>
+          {{ end }}
+        </div>
+        <div class="home-newspaper__column home-newspaper__column--right">
+          {{ with $right }}
+            <section class="home-newspaper__panel home-newspaper__panel--markdown">
+              {{ $.RenderString . }}
+            </section>
+          {{ end }}
+          {{ with $wr }}
+            <div class="home-widgets home-widgets--in-column">
+              {{ range . }}{{ partial "home-widget-section.html" (dict "Site" $.Site "Home" $ "Block" .) }}{{ end }}
+            </div>
+          {{ end }}
+        </div>
+      </div>
+    {{ else if and .Content .Site.Params.showIntroContentOnHomepage }}
+      <div class="home-newspaper__grid home-newspaper__grid--single">
+        <div class="home-newspaper__column home-newspaper__column--full">
+          {{ .Content }}
+        </div>
+      </div>
+    {{ end }}
+    {{ with $wlegacy }}
+      {{ if not (or $wl $wr) }}
+        <div class="home-widgets">
+          {{ range . }}{{ partial "home-widget-section.html" (dict "Site" $.Site "Home" $ "Block" .) }}{{ end }}
+        </div>
+      {{ end }}
+    {{ end }}
+  </div>
+
+  {{ if .Site.Params.showPostsOnHomepage }}
+    {{ $pages := where .Site.RegularPages "Type" "posts" }}
+    {{ $sorted := ($pages.ByParam "date").Reverse }}
+    {{ if .Site.Params.sortPostsByDateOldestFirst }}
+      {{ $sorted = $pages.ByParam "date" }}
+    {{ end }}
+
+    {{ $paginator := .Paginate $sorted }}
+
+    {{ if .Site.Params.usePaginationOnHomepage }}
+      {{ range $paginator.Pages }}
+        {{ .Render "summary" }}
+      {{ end }}
+      {{ partial "paginator" . }}
+    {{ else }}
+      {{ $limit := .Site.Params.limitPostsOnHomepage | default 3 }}
+      {{ range first $limit $sorted}}
+        {{ .Render "summary" }}
+      {{ end }}
+      <a class="view-more" href="/posts">More Posts</a>
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{ define "footer_js" }}
+{{ end }}

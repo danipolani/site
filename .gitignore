@@ -19,3 +19,4 @@
 
 # Hugo output (деплой через GitHub Actions, не коммитим)
 dani/public/
+ref/*

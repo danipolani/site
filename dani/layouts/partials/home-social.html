@@ -1,0 +1,16 @@
+{{ if .Site.Data.social.links }}
+  <section class="home-newspaper__panel home-newspaper__panel--social" aria-label='{{ .Params.home_social_heading | default "В соцсетях" }}'>
+    {{ with .Params.home_social_heading }}
+      <h2 class="home-newspaper__panel-title">{{ . }}</h2>
+    {{ end }}
+    <div class="home-newspaper__social-icons">
+      {{ range .Site.Data.social.links }}
+        <span class="social-icon social-icon-{{ .name | urlize }}">
+          <a href="{{ .url }}" title="{{ .name }}" target="_blank" rel="noopener">
+            <img src="{{ .image | relURL }}" width="28" height="28" alt="{{ .name }}"/>
+          </a>
+        </span>
+      {{ end }}
+    </div>
+  </section>
+{{ end }}

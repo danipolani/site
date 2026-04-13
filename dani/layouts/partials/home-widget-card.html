@@ -1,0 +1,25 @@
+{{/* Leaf page: Params.summary, Params.image, Params.links [{label, url}] — список без «карточек» */}}
+<article class="home-widget-item">
+  {{ if .Params.image }}
+    {{ $img := .Resources.GetMatch .Params.image }}
+    {{ if $img }}
+      <a class="home-widget-item__media" href="{{ .RelPermalink }}" aria-hidden="true" tabindex="-1">
+        <img src="{{ $img.RelPermalink }}" alt="" loading="lazy" width="{{ $img.Width }}" height="{{ $img.Height }}" />
+      </a>
+    {{ end }}
+  {{ end }}
+  <h3 class="home-widget-item__title">
+    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+  </h3>
+  {{ $sum := or .Params.summary .Summary }}
+  {{ with $sum }}
+    <p class="home-widget-item__summary">{{ . }}</p>
+  {{ end }}
+  {{ with .Params.links }}
+    <ul class="home-widget-item__links">
+      {{ range . }}
+        <li><a href="{{ .url }}">{{ .label }}</a></li>
+      {{ end }}
+    </ul>
+  {{ end }}
+</article>

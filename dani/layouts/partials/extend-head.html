@@ -1,0 +1,34 @@
+{{- /* Рамка: border = настраиваемая ширина; фон body = base — поля у узкого wrapper не заливаются цветом рамки. Скругление — у #wrapper. */ -}}
+{{- $r := .Site.Params.frameBorderRadius | default "0px" -}}
+{{- $fw := .Site.Params.frameWidth | default "18px" -}}
+{{- if eq .Site.Params.addFrame true -}}
+<style id="site-frame-inner-radius">
+  :root {
+    --frame-border-radius: {{ $r }};
+    --frame-width: {{ $fw }};
+  }
+  body.frame {
+    border: var(--frame-width) solid var(--highlight-color) !important;
+    border-radius: 0 !important;
+    background-color: var(--base-color) !important;
+    padding: 20px !important;
+    box-sizing: border-box;
+  }
+  @media (min-width: 767px) {
+    body.frame {
+      padding: 50px !important;
+    }
+  }
+  body.frame #wrapper.wrapper {
+    border-radius: var(--frame-border-radius);
+    background-color: var(--base-color);
+    box-sizing: border-box;
+    min-height: calc(100vh - 2 * var(--frame-width) - 40px);
+  }
+  @media (min-width: 767px) {
+    body.frame #wrapper.wrapper {
+      min-height: calc(100vh - 2 * var(--frame-width) - 100px);
+    }
+  }
+</style>
+{{- end -}}

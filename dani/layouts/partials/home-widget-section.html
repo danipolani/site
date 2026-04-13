@@ -1,0 +1,33 @@
+{{/* Context: dict "Site" "Home" "Block" — Block: section, title */}}
+{{ $site := .Site }}
+{{ $block := .Block }}
+{{ $section := $block.section }}
+{{ $blockTitle := $block.title }}
+{{ $pages := slice }}
+{{ with $site.GetPage "section" $section }}
+  {{ range .RegularPages }}
+    {{ if .Params.show_on_homepage }}
+      {{ $pages = $pages | append . }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+{{ if not $pages }}
+  {{ range where $site.RegularPages "Section" $section }}
+    {{ if .Params.show_on_homepage }}
+      {{ $pages = $pages | append . }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+{{ if $pages }}
+  {{ $sorted := sort $pages ".Params.homepage_weight" "asc" }}
+  <section class="home-widget home-newspaper__panel" id="home-widget-{{ $section }}">
+    {{ with $blockTitle }}
+      <h2 class="home-newspaper__panel-title">{{ . }}</h2>
+    {{ end }}
+    <div class="home-widget__list">
+      {{ range $sorted }}
+        {{ partial "home-widget-card.html" . }}
+      {{ end }}
+    </div>
+  </section>
+{{ end }}
