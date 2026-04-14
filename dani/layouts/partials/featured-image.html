@@ -1,0 +1,11 @@
+{{/* Картинка из leaf bundle: image: featured.jpg рядом с index.*.md; иначе путь как раньше (static и т.д.) */}}
+{{ if .Params.image }}
+  {{ $r := .Resources.GetMatch .Params.image }}
+  {{ $src := "" }}
+  {{ if $r }}
+    {{ $src = $r.RelPermalink }}
+  {{ else }}
+    {{ $src = .Params.image | relURL }}
+  {{ end }}
+  <img alt="{{ .Params.imageAltAttribute | default "Article hero image" }}" src="{{ $src }}"{{ if $r }} width="{{ $r.Width }}" height="{{ $r.Height }}"{{ end }} />
+{{ end }}

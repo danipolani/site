@@ -2,11 +2,11 @@
 <article class="home-widget-item">
   {{ if .Params.image }}
     {{ $img := .Resources.GetMatch .Params.image }}
-    {{ if $img }}
-      <a class="home-widget-item__media" href="{{ .RelPermalink }}" aria-hidden="true" tabindex="-1">
-        <img src="{{ $img.RelPermalink }}" alt="" loading="lazy" width="{{ $img.Width }}" height="{{ $img.Height }}" />
-      </a>
-    {{ end }}
+    {{ $src := .Params.image | relURL }}
+    {{ if $img }}{{ $src = $img.RelPermalink }}{{ end }}
+    <a class="home-widget-item__media" href="{{ .RelPermalink }}" aria-hidden="true" tabindex="-1">
+      <img src="{{ $src }}" alt="" loading="lazy"{{ with $img }} width="{{ .Width }}" height="{{ .Height }}"{{ end }} />
+    </a>
   {{ end }}
   <h3 class="home-widget-item__title">
     <a href="{{ .RelPermalink }}">{{ .Title }}</a>
