@@ -1,6 +1,6 @@
 ---
 title: Dani Polani
-home_subtitle: Rather smol and kinda friendly animal
+home_subtitle: Rather smol and kinda friendly animol
 home_description_heading: Caveat Emptor
 home_description: |
   I do almost everything. Much of it is bad. Still—or not. No blame, no praise.
