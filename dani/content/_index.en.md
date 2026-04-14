@@ -3,7 +3,7 @@ title: Dani Polani
 home_subtitle: Rather smol and kinda friendly animol
 home_description_heading: Caveat Emptor
 home_description: |
-  I do almost everything. Much of it is bad. Still—or not. No blame, no praise.
+  Writer and artist, developer and designer, entrepreneur and who knows what... I do almost everything. Most of it badly. Still...or not. No blame, no praise.
 home_social_heading: Socials
 home_widgets_left:
   - section: worldbuilding

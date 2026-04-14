@@ -1,11 +1,25 @@
+/* Иконки соцсетей в футере — по центру, как копирайт (на главной блока нет) */
+.footer .footer-social {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem 0.75rem;
+}
+
+.footer .footer-social .social-icon {
+  margin-right: 0;
+}
+
 .footer-copyright {
   margin: 1.25rem 0 0;
   padding-top: 0.75rem;
   font-size: 0.95rem;
   line-height: 1.4;
   color: var(--text-color);
-  opacity: 0.45;
+  opacity: 0.40;
   text-align: center;
+  font-family: var(--font-family-heading);
 }
 
 .footer .footer-social + .footer-copyright {
