@@ -1,0 +1,14 @@
+.footer-copyright {
+  margin: 1.25rem 0 0;
+  padding-top: 0.75rem;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  color: var(--text-color);
+  opacity: 0.45;
+  text-align: center;
+}
+
+.footer .footer-social + .footer-copyright {
+  margin-top: 0.75rem;
+  padding-top: 0;
+}

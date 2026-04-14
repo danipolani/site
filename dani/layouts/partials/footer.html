@@ -11,4 +11,7 @@
     {{ end }}
   </div>
   {{ end }}
+  {{ with .Site.Copyright }}
+  <p class="footer-copyright">{{ . }}</p>
+  {{ end }}
 </div>
