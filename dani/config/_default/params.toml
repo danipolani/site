@@ -3,7 +3,7 @@
 
 twitter_handle = ""
 showAuthorOnHomepage = false
-showAuthorOnPosts = true
+showAuthorOnPosts = false
 showIntroContentOnHomepage = true
 showPostsOnHomepage = false
 usePaginationOnHomepage = false

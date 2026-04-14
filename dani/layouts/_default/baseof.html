@@ -6,7 +6,12 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>{{ block "title" . }}{{ .Title }} - {{ .Site.Title }}{{ end }}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" href="{{ .Site.BaseURL }}favicon.png">
+  <link rel="icon" href="{{ "favicon.ico" | relURL }}" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ "favicon-32x32.png" | relURL }}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ "favicon-16x16.png" | relURL }}">
+  <link rel="apple-touch-icon" href="{{ "apple-touch-icon.png" | relURL }}">
+  <link rel="icon" type="image/png" sizes="192x192" href="{{ "android-chrome-192x192.png" | relURL }}">
+  <link rel="icon" type="image/png" sizes="512x512" href="{{ "android-chrome-512x512.png" | relURL }}">
   <link rel="canonical" href="{{ .Permalink }}" />
 
   {{- if hugo.IsProduction | or (eq site.Params.env "production") }}

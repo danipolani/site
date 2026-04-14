@@ -1,0 +1,14 @@
+<div class="footer">
+  {{- /* На главной соцсети уже в home-social; здесь — только на остальных страницах */ -}}
+  {{ if and .Site.Data.social.links (not .IsHome) }}
+  <div class="footer-social">
+    {{ range .Site.Data.social.links }}
+      <span class="social-icon social-icon-{{ .name | urlize }}">
+        <a href="{{ .url }}" title="{{ .name }}" target="_blank" rel="noopener">
+          <img src="{{ .image | relURL }}" width="24" height="24" alt="{{ .name }}"/>
+        </a>
+      </span>
+    {{ end }}
+  </div>
+  {{ end }}
+</div>
