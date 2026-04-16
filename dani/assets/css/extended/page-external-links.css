@@ -1,0 +1,59 @@
+/* Список внешних ссылок под заголовком на страницах книг, проектов, магазинов и т.д. */
+.intro .page-external-links {
+  margin: 0 0 1.5rem;
+  max-width: 100%;
+}
+
+@media (min-width: 767px) {
+  .intro .page-external-links {
+    width: 80%;
+  }
+}
+
+/* Контентные single: отступ сверху перед ссылками + ссылки на всю ширину (как заголовок) */
+body.page-default-single .intro .page-external-links,
+body.page-blog-single .intro .page-external-links {
+  margin-top: 1.35rem;
+  width: 100%;
+  max-width: 100%;
+}
+
+@media (min-width: 767px) {
+  body.page-default-single .intro .page-external-links,
+  body.page-blog-single .intro .page-external-links {
+    width: 100%;
+  }
+}
+
+.page-external-links__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(11.5rem, 1fr));
+  gap: 0.4rem 1.25rem;
+}
+
+.page-external-links__item {
+  margin: 0;
+  min-width: 0;
+}
+
+.page-external-links__link {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  max-width: 100%;
+  font-family: var(--font-family-paragraph);
+  font-size: 18px;
+  line-height: 1.45;
+  color: var(--highlight-color);
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+  min-width: 0;
+}
+
+.page-external-links__link:hover {
+  color: var(--dot-color);
+  text-decoration: none;
+}

@@ -1,0 +1,9 @@
+/*
+  Заголовок .intro на leaf-страницах: тема задаёт width:80% для h1 от 767px —
+  на контентных single растягиваем на всю ширину блока (не главная).
+*/
+body.page-default-single .intro > h1,
+body.page-blog-single .intro > h1 {
+  width: 100%;
+  max-width: none;
+}

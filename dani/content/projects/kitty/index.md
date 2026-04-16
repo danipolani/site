@@ -6,6 +6,6 @@ homepage_weight: 20
 type: projects
 summary: "Боты для отслеживания уличных котиков."
 links:
-  - label: kitty.tinygods.dev
+  - label: Kitty.TinyGods.dev
     url: https://kitty.tinygods.dev/
 ---

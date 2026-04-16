@@ -6,6 +6,6 @@ homepage_weight: 0
 type: worldbuilding
 summary: "My most useless yet most cherished creation."
 links:
-  - label: lemuteloku.com
+  - label: LemuTeloku.com
     url: https://lemuteloku.com/
 ---

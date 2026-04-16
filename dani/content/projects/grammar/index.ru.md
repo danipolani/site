@@ -6,6 +6,6 @@ homepage_weight: 10
 type: projects
 summary: "Визуальный редактор генеративных грамматик."
 links:
-  - label: grammar.tinygods.dev
+  - label: Grammar.TinyGods.dev
     url: https://grammar.tinygods.dev/
 ---

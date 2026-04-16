@@ -6,6 +6,6 @@ homepage_weight: 0
 type: worldbuilding
 summary: "Мой язык и мир. Моё самое сомнительное и самое любимое дело."
 links:
-  - label: lemuteloku.com
+  - label: LemuTeloku.com
     url: https://lemuteloku.com/
 ---

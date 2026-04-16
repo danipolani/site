@@ -7,10 +7,8 @@ homepage_weight: 0
 summary: "Ателье и магазин авторских вещей."
 description: "Ателье и магазин авторских вещей."
 links:
-  - label: apinu.shop
+  - label: Apinu.shop
     url: https://apinu.shop/
 ---
 
 Онлайн-магазин Apinu: свечи Externita, принты и другие вещи из воображаемого города [Apinu](https://apinu.shop/).
-
-

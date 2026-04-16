@@ -1,0 +1,21 @@
+/*
+  Тема по умолчанию: все h1–h3 (в т.ч. в .content) — var(--font-family-heading), т.е. Dela Gothic One.
+  Здесь только заголовки в теле материала приводим к шрифту основного текста (Google Sans).
+  Заголовок страницы в .intro не затрагивается.
+*/
+.content h1,
+.content h2,
+.content h3,
+.content h4 {
+  font-family: var(--font-family-paragraph);
+}
+
+.content h1,
+.content h2,
+.content h3 {
+  font-weight: 700;
+}
+
+.content h4 {
+  font-weight: 600;
+}

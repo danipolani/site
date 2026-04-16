@@ -1,0 +1,6 @@
+{{- /* Краткое описание под заголовком; hide_summary: true в front matter — не показывать */ -}}
+{{ if .Params.summary }}
+  {{ if not (eq .Params.hide_summary true) }}
+    <p class="intro-subtitle">{{ .Params.summary }}</p>
+  {{ end }}
+{{ end }}

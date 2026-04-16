@@ -3,6 +3,8 @@
 {{ define "main" }}
 <div class="intro">
   <h1>{{ .Title }}{{ if .Site.Params.addDot }}<span class="dot">.</span>{{ end }}</h1>
+  {{ partial "page-summary.html" . }}
+  {{ partial "page-external-links.html" . }}
   {{ partial "featured-image.html" . }}
 </div>
 

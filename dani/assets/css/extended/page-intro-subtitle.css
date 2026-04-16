@@ -1,0 +1,21 @@
+/* Подзаголовок (summary) на контентных single — как .home-newspaper__subtitle по типографике */
+.intro .intro-subtitle {
+  margin: 0.0rem 0 2.0rem;
+  max-width: 36rem;
+  font-family: var(--font-family-paragraph);
+  font-size: 1.85em;
+  line-height: 1;
+  font-weight: 700;
+  color: var(--text-color);
+  opacity: 0.88;
+  text-transform: none;
+  letter-spacing: 0.02em;
+  white-space: pre-line;
+}
+
+/* Только leaf-страницы (книги, проекты и т.д.): во всю ширину контентной колонки — главная не затрагивается */
+body.page-default-single .intro .intro-subtitle,
+body.page-blog-single .intro .intro-subtitle {
+  max-width: none;
+  width: 100%;
+}

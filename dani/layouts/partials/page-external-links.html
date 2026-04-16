@@ -1,0 +1,14 @@
+{{- /* Внешние ссылки из front matter (links: [{label, url}]) — под заголовком, любое число пунктов */ -}}
+{{ with .Params.links }}
+  {{ if gt (len .) 0 }}
+  <nav class="page-external-links" aria-label="{{ if eq $.Site.Language.Lang "en" }}External links{{ else }}Внешние ссылки{{ end }}">
+    <ul class="page-external-links__list">
+      {{ range . }}
+        <li class="page-external-links__item">
+          <a class="page-external-links__link" href="{{ .url }}" target="_blank" rel="noopener noreferrer">{{ .label }}</a>
+        </li>
+      {{ end }}
+    </ul>
+  </nav>
+  {{ end }}
+{{ end }}

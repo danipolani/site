@@ -1,0 +1,51 @@
+/*
+  Иконка «внешняя ссылка» для a.external-link (класс ставит js/external-link-icons.js).
+  Иконка слева от текста (::before). Цвет = currentColor; без иконки у ссылки только с <img>.
+  inline-flex + nowrap — иконка и подпись не разъезжаются на две строки.
+*/
+a.external-link {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 0.28em;
+  vertical-align: middle;
+  max-width: 100%;
+  /* Единая высота строки для flex + корректного lh у ::before */
+  line-height: inherit;
+}
+
+a.external-link::before {
+  content: "";
+  display: block;
+  flex-shrink: 0;
+  align-self: center;
+  /* Ближе к высоте строки; без lh — ~cap-height по масштабу */
+  width: 0.95em;
+  height: 0.95em;
+  opacity: 0.72;
+  background-color: currentColor;
+  -webkit-mask-image: var(--external-link-icon);
+  mask-image: var(--external-link-icon);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+}
+
+@supports (width: 1lh) {
+  a.external-link::before {
+    width: min(0.78lh, 1.05em);
+    height: min(0.78lh, 1.05em);
+  }
+}
+
+:root {
+  --external-link-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M18 19H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h5a1 1 0 1 0 0-2H6a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3v-5a1 1 0 1 0-2 0v5a1 1 0 0 1-1 1zM14 3a1 1 0 0 0 0 2h2.59l-9.3 9.29a1 1 0 0 0 1.42 1.42l9.29-9.3V9a1 1 0 1 0 2 0V3h-6z'/%3E%3C/svg%3E");
+}
+
+/* Только картинка в ссылке — без иконки */
+a.external-link:has(> img:only-child)::before {
+  display: none;
+}

@@ -6,6 +6,6 @@ homepage_weight: 0
 type: projects
 summary: "Automation studio."
 links:
-  - label: tinygods.dev
+  - label: TinyGods.dev
     url: https://tinygods.dev/
 ---

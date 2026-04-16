@@ -4,12 +4,12 @@
     font-size: 48px;
     line-height: 56px;
     margin-top: 0;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     @include breakpoint('small') {
       width: 80%;
-      font-size: 88px;
-      line-height: 94px;
-      margin-bottom: 50px;
+      font-size: 80px;
+      line-height: 88px;
+      margin-bottom: 30px;
     }
     strong {
       color: var(--highlight-color);
