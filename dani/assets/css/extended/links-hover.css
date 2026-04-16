@@ -16,11 +16,11 @@ a:hover {
   text-decoration: none;
 }
 
-.home-newspaper__social-icons a {
+.home-newspaper__panel--social .home-newspaper__social-icon a {
   transition: color 0.22s ease-out, opacity 0.22s ease-out;
 }
 
-.home-newspaper__social-icons a:hover {
+.home-newspaper__panel--social .home-newspaper__social-icon a:hover {
   color: var(--dot-color);
 }
 

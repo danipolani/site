@@ -3,13 +3,26 @@
     {{ with .Params.home_social_heading }}
       <h2 class="home-newspaper__panel-title">{{ . }}</h2>
     {{ end }}
-    <div class="home-newspaper__social-icons">
+    <div class="home-newspaper__social-list">
       {{ range .Site.Data.social.links }}
-        <span class="social-icon social-icon-{{ .name | urlize }}">
-          <a href="{{ .url }}" title="{{ .name }}" target="_blank" rel="noopener">
-            <img src="{{ .image | relURL }}" width="28" height="28" alt="{{ .name }}"/>
-          </a>
-        </span>
+        {{ $desc := "" }}
+        {{ if eq $.Site.Language.Lang "en" }}
+          {{ $desc = or .description_en .description }}
+        {{ else }}
+          {{ $desc = or .description_ru .description }}
+        {{ end }}
+        <div class="home-newspaper__social-row">
+          <div class="home-newspaper__social-icon">
+            <span class="social-icon social-icon-{{ .name | urlize }}">
+              <a href="{{ .url }}" title="{{ .name }}" target="_blank" rel="noopener">
+                <img src="{{ .image | relURL }}" width="28" height="28" alt="{{ .name }}"/>
+              </a>
+            </span>
+          </div>
+          {{ with $desc }}
+            <p class="home-newspaper__social-desc">{{ . }}</p>
+          {{ end }}
+        </div>
       {{ end }}
     </div>
   </section>

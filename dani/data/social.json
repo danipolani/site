@@ -3,32 +3,51 @@
     {
       "name": "Twitter",
       "url": "https://x.com/danipolani",
-      "image": "images/social/twitter.svg"
+      "image": "images/social/twitter.svg",
+      "description_ru": "Твиттер",
+      "description_en": "Twitter"
     },
     {
       "name": "Mastodon",
       "url": "https://mastodon.social/@DaniPolani",
-      "image": "images/social/mastodon.svg"
+      "image": "images/social/mastodon.svg",
+      "description_ru": "Мастодон",
+      "description_en": "Mastodon"
     },
     {
       "name": "Bluesky",
       "url": "https://bsky.app/profile/danipolani.bsky.social",
-      "image": "images/social/bluesky.svg"
+      "image": "images/social/bluesky.svg",
+      "description_ru": "Блюскай",
+      "description_en": "Bluesky"
     },
     {
-      "name": "YouTube",
+      "name": "YouTube Apinu Atelier",
       "url": "https://www.youtube.com/@apinu_atelier",
-      "image": "images/social/youtube.svg"
+      "image": "images/social/youtube.svg",
+      "description_ru": "Канал Апину Ателье",
+      "description_en": "Apinu Atelier channel"
+    },
+    {
+      "name": "YouTube Lemula",
+      "url": "https://www.youtube.com/@LemulaApp",
+      "image": "images/social/youtube.svg",
+      "description_ru": "Канал Lemula",
+      "description_en": "Lemula App channel"
     },
     {
       "name": "Reddit",
       "url": "https://www.reddit.com/user/DaniPolani",
-      "image": "images/social/reddit.svg"
+      "image": "images/social/reddit.svg",
+      "description_ru": "Реддит",
+      "description_en": "Reddit"
     },
     {
       "name": "Telegram",
       "url": "https://t.me/dani_tales",
-      "image": "images/social/telegram.svg"
+      "image": "images/social/telegram.svg",
+      "description_ru": "Канал в Телеграме",
+      "description_en": "Telegram channel"
     }
   ]
 }
