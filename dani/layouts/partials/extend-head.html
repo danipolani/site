@@ -1,3 +1,10 @@
+{{- /* Хост публикации: абсолютные ссылки из ref/Permalink считаются внутренними даже на localhost (см. external-link-icons.js). */ -}}
+{{- with urls.Parse site.BaseURL -}}
+  {{- $host := .Hostname | default .Host -}}
+  {{- with $host -}}
+<meta name="site-internal-host" content="{{ . }}" />
+  {{- end -}}
+{{- end -}}
 {{- /* Рамка: body = полоса цвета highlight (padding = frameWidth); .site-frame-panel = полный прямоугольник с base и внутренним скруглением (в углах виден highlight). */ -}}
 {{- $r := .Site.Params.frameBorderRadius | default "0px" -}}
 {{- $fw := .Site.Params.frameWidth | default "18px" -}}
