@@ -6,6 +6,9 @@ draft: false
 show_on_homepage: true
 homepage_weight: 0
 summary: "Метафорическая сказка о том, как Кот и девочка по имени Вишенка (её имя само назвало себя) плывут по реке, над которой всегда стоит осень."
+tags:
+  - fiction
+  - magic-realism
 links:
   - label: Ридеро
     url: https://ridero.ru/books/pokhod_vishenki_i_kota_ot_zimy_k_vesne_na_plotu/

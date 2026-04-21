@@ -1,0 +1,38 @@
+{{- /*
+  Тизеры блога на главной: только страницы секции blog с Params.show_on_home_blog: true.
+  Контекст: dict "Site" "Pages"
+*/ -}}
+{{- $site := .Site | default site -}}
+{{- $pages := .Pages -}}
+{{- $blog := $site.GetPage "section" "blog" -}}
+{{- $heading := "Из блога" -}}
+{{- $more := "В блог" -}}
+{{- if eq $site.Language.Lang "en" -}}
+  {{- $heading = "From the blog" -}}
+  {{- $more = "Blog" -}}
+{{- end -}}
+{{- with $site.Params.home_blog_teasers_heading -}}
+  {{- $heading = . -}}
+{{- end -}}
+{{- with $site.Params.home_blog_teasers_more_label -}}
+  {{- $more = . -}}
+{{- end -}}
+<section class="home-newspaper__panel home-newspaper__panel--blog-teasers" aria-label="{{ $heading }}">
+  <h2 class="home-newspaper__panel-title">{{ $heading }}</h2>
+  <ul class="home-blog-teasers__list">
+    {{- range $pages -}}
+      <li class="home-blog-teasers__item">
+        <a class="home-blog-teasers__title" href="{{ .RelPermalink }}">{{ .Title }}</a>
+        {{- $blurb := or .Params.description .Params.summary -}}
+        {{- with $blurb -}}
+          <p class="home-blog-teasers__desc">{{ . }}</p>
+        {{- end -}}
+      </li>
+    {{- end -}}
+  </ul>
+  {{- with $blog -}}
+    <p class="home-blog-teasers__more">
+      <a class="home-blog-teasers__more-link" href="{{ .RelPermalink }}">{{ $more }}</a>
+    </p>
+  {{- end -}}
+</section>

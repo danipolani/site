@@ -1,6 +1,14 @@
 {{ define "body_classes" }}page-home{{ end }}
 
 {{ define "main" }}
+  {{- $blogTeasers := slice -}}
+  {{- if .Site.Params.showPostsOnHomepage -}}
+    {{- $fromBlog := where .Site.RegularPages "Section" "blog" -}}
+    {{- $flagged := where $fromBlog "Params.show_on_home_blog" true -}}
+    {{- $sorted := cond $.Site.Params.sortPostsByDateOldestFirst ($flagged.ByDate) ($flagged.ByDate.Reverse) -}}
+    {{- $limit := .Site.Params.limitPostsOnHomepage | default 8 -}}
+    {{- $blogTeasers = first $limit $sorted -}}
+  {{- end -}}
   <div class="home-newspaper">
     <header class="home-newspaper__masthead">
       <div class="home-newspaper__masthead-line" aria-hidden="true"></div>
@@ -74,30 +82,10 @@
         </div>
       {{ end }}
     {{ end }}
+    {{ if and .Site.Params.showPostsOnHomepage (gt (len $blogTeasers) 0) }}
+      {{ partial "home-blog-teasers.html" (dict "Site" .Site "Pages" $blogTeasers) }}
+    {{ end }}
   </div>
-
-  {{ if .Site.Params.showPostsOnHomepage }}
-    {{ $pages := where .Site.RegularPages "Type" "posts" }}
-    {{ $sorted := ($pages.ByParam "date").Reverse }}
-    {{ if .Site.Params.sortPostsByDateOldestFirst }}
-      {{ $sorted = $pages.ByParam "date" }}
-    {{ end }}
-
-    {{ $paginator := .Paginate $sorted }}
-
-    {{ if .Site.Params.usePaginationOnHomepage }}
-      {{ range $paginator.Pages }}
-        {{ .Render "summary" }}
-      {{ end }}
-      {{ partial "paginator" . }}
-    {{ else }}
-      {{ $limit := .Site.Params.limitPostsOnHomepage | default 3 }}
-      {{ range first $limit $sorted}}
-        {{ .Render "summary" }}
-      {{ end }}
-      <a class="view-more" href="/posts">More Posts</a>
-    {{ end }}
-  {{ end }}
 {{ end }}
 
 {{ define "footer_js" }}

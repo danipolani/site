@@ -1,0 +1,13 @@
+{{- with .Params.tags -}}
+  {{- if gt (len .) 0 -}}
+  <nav class="page-tags" aria-label="{{ if eq $.Site.Language.Lang "en" }}Tags{{ else }}Теги{{ end }}">
+    <ul class="page-tags__list">
+      {{- range . -}}
+      <li class="page-tags__item">
+        <a class="page-tags__link" href="{{ printf "/tags/%s/" (. | urlize) | relLangURL }}">{{ . | humanize }}</a>
+      </li>
+      {{- end -}}
+    </ul>
+  </nav>
+  {{- end -}}
+{{- end -}}

@@ -6,6 +6,9 @@ show_on_homepage: true
 homepage_weight: 0
 summary: "Atelier and shop for author-made goods."
 description: "Atelier and shop for author-made goods."
+tags:
+  - art
+  - merch
 links:
   - label: Apinu.shop
     url: https://apinu.shop/

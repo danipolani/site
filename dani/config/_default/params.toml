@@ -5,7 +5,8 @@ twitter_handle = ""
 showAuthorOnHomepage = false
 showAuthorOnPosts = false
 showIntroContentOnHomepage = true
-showPostsOnHomepage = false
+# Блок «Из блога» под газетой: только страницы content/blog/* с show_on_home_blog: true
+showPostsOnHomepage = true
 usePaginationOnHomepage = false
 limitPostsOnHomepage = 8
 sortPostsByDateOldestFirst = false

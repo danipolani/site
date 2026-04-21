@@ -35,6 +35,10 @@ languages:
     weight: 2
     title: Dani Polani
     copyright: "© 2026 Dani Polani"
+    taxonomies:
+      category: categories
+      tag: tags
+      series: series
     params:
       authorTagline: "Rather smol and kinda friendly animal"
 

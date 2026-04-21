@@ -6,6 +6,9 @@ draft: false
 show_on_homepage: true
 homepage_weight: 0
 summary: "A metaphorical tale about a Cat and a girl named Cherry rafting down a river where it is always autumn."
+tags:
+  - fiction
+  - magic-realism
 links:
   - label: Ridero
     url: https://ridero.ru/books/pokhod_vishenki_i_kota_ot_zimy_k_vesne_na_plotu/

@@ -5,6 +5,10 @@ show_on_homepage: true
 homepage_weight: 10
 type: projects
 summary: "Visual editor for generative grammars."
+tags:
+  - tool
+  - linguistics
+  - conlanging
 links:
   - label: Grammar.TinyGods.dev
     url: https://grammar.tinygods.dev/

@@ -6,6 +6,9 @@ show_on_homepage: true
 homepage_weight: 0
 summary: "Ателье и магазин авторских вещей."
 description: "Ателье и магазин авторских вещей."
+tags:
+  - art
+  - merch
 links:
   - label: Apinu.shop
     url: https://apinu.shop/

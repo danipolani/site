@@ -40,10 +40,10 @@
  pageRef = "blog"
  weight = 25
 
-# [[main]]
-#  name = "Tags"
-#  pageRef = "tags"
-#  weight = 30
+[[main]]
+ name = "Tags"
+ url = "/tags/"
+ weight = 26
 
 
 # -- Footer Menu --
@@ -81,10 +81,10 @@
  pageRef = "blog"
  weight = 25
 
-# [[footer]]
-#  name = "Tags"
-#  pageRef = "tags"
-#  weight = 30
+[[footer]]
+ name = "Tags"
+ url = "/tags/"
+ weight = 26
 
 # [[footer]]
 #   name = "Categories"

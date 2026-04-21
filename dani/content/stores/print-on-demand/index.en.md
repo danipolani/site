@@ -6,6 +6,9 @@ show_on_homepage: true
 homepage_weight: 10
 summary: "Print-on-demand merch"
 description: "Print-on-demand merch"
+tags:
+  - print-on-demand
+  - merch
 links:
   - label: Redbubble
     url: https://www.redbubble.com/people/apinuatelier/shop?asc=u

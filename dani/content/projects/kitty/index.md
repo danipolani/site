@@ -5,6 +5,9 @@ show_on_homepage: true
 homepage_weight: 20
 type: projects
 summary: "Боты для отслеживания уличных котиков."
+tags:
+  - bots
+  - maps
 links:
   - label: Kitty.TinyGods.dev
     url: https://kitty.tinygods.dev/
