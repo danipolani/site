@@ -1,3 +1,6 @@
+{{- with .Site.Params.google_site_verification -}}
+<meta name="google-site-verification" content="{{ . }}" />
+{{- end -}}
 {{- /* Хост публикации: абсолютные ссылки из ref/Permalink считаются внутренними даже на localhost (см. external-link-icons.js). */ -}}
 {{- with urls.Parse site.BaseURL -}}
   {{- $host := .Hostname | default .Host -}}

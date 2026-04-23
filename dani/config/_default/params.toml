@@ -28,3 +28,6 @@ googleFontsUrl = "https://fonts.googleapis.com/css2?family=Dela+Gothic+One&famil
 fontFamilyHeading = "'Dela Gothic One', sans-serif"
 fontFamilyParagraph = "'Google Sans', sans-serif"
 fontFamilyMonospace = "monospace"
+
+# Google Search Console — HTML-тег подтверждения владения сайтом
+google_site_verification = "SQoj7_mm_OYo42ck9rcpI80_fQ78IOJQzcbD0ZJpwOE"
