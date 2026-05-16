@@ -10,4 +10,4 @@ publish: build
 	@echo "Готово: каталог public/. Залейте изменения в main — деплой через Actions."
 
 commit:
-	git add . && git commit -m "updated site" && git push
+	git add . && git commit -m "updated site $$(date -u +'%Y-%m-%d %H:%M:%S UTC')" && git push

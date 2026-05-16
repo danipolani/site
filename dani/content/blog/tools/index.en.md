@@ -37,4 +37,9 @@ A **word-by-word translation visualizer** ([Bitext Align](https://aligner.tinygo
 
 ## Social media and online activities
 
-*More to come*
+### Cards
+
+A **text card and carousel maker** for social ([Cards](https://cards.tinygods.dev/)): paste a quote, thread, essay, or post draft—get polished images with smart slide splits, presets for **Instagram**, **LinkedIn**, **X**, and **Stories**, header/footer and slide numbers, plus **PNG** or **ZIP** export. Preview matches export; no account needed to download.
+
+- [Project page]({{< ref "/projects/cards" >}})
+- [cards.tinygods.dev](https://cards.tinygods.dev/)
